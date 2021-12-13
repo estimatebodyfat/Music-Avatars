@@ -379,48 +379,168 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
          
           <s.TextDescription
             style={{
               textAlign: "left",
-              color: "var(--primary-text)",
-              fontFamily: "sans-serif",
-            
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
             }}
           >
-            1. What are Music Avatars? <br/>  
-Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments.  <br/>
+            What are Music Avatars?  </s.TextDescription>
+
+            <s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
+Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments.  <br/><br/>
 
 Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like. <br/><br/>
+
+</s.TextDescription>
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
  
-2. What is the vision for Music Avatars?<br/>
+What is the vision for Music Avatars? </s.TextDescription>
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
 
 Music Avatars are designed to capture a moment where an artist/musician is one with their instrument. Hence, the instrument/mic with unique facial features. <br/>
 
 We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians who have become 1 with their NFT and choose to hold it forever. <br/>
 
-We want every deserving artist to get a hold of a Music Avatar. <br/><br/>
+We want every deserving artist to get a hold of a Music Avatar. <br/><br/></s.TextDescription>
 
-3. What can I do with a Music Avatar?<br/>
 
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+What can I do with a Music Avatar? </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
 Music Avatars provide a unique visual and musical identity that makes you stand wherever a visual representation is required. As long as you hold a Music Avatar NFT, you can license it for use as the face of your brand, your online identity (profile picture), sold on T-shirts, advertisements, stickers, mugs, etc. and keep all the earnings for yourself.<br/><br/>
  
-3. Who are Music Avatars for?<br/>
+</s.TextDescription>
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+
+Who are Music Avatars for? </s.TextDescription>
+
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
+
 Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.<br/><br/>
  
-4. Which chain will these NFTs be on? How much does it cost to mint a Music Avatar? How many can I mint for myself?<br/>
+Which chain will these NFTs be on? How much does it cost to mint a Music Avatar? How many can I mint for myself?<br/>
 We live on Ethereum The public mint is free. You only need to pay the gas fee associated with the transaction. You are limited to 2 NFTs per address during the mint. <br/>
 
-The public mint is scheduled for Sunday, December 19th 2021. <br/><br/>
+The public mint is scheduled for Sunday, December 19th 2021. <br/><br/></s.TextDescription>
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+
  
-5. How many Music Avatar are available for mint?<br/>
-There are 10,000 Music Avatars in total of which 9,000 are available for the free public mint and the rest reserved for the founding team/marketing.<br/><br/>
+How many Music Avatar are available for mint? </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
+
+
+There are 10,000 Music Avatars in total of which 9,000 are available for the free public mint and the rest reserved for the founding team/marketing.<br/><br/></s.TextDescription>
   
-6. What started this project?<br/>
-Kolourr (Bruce) started this project with the help of Donald Bough. Special thanks go out to Hashlips.<br/><br/>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+
+What started this project?  </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Big Shoulders Display',
+              fontSize: '25px',
+            }}
+          >
+
+Kolourr (Bruce) started this project with the help of Donald Bough. Special thanks go out to Hashlips.<br/><br/></s.TextDescription>
             
-          </s.TextDescription>
+         
 
 
           <s.TextDescription
@@ -432,22 +552,14 @@ Kolourr (Bruce) started this project with the help of Donald Bough. Special than
           >
             Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            Once you make the purchase, you cannot undo this action. We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            successfully mint your NFT. We recommend that you don't lower the
+            gas limit.
           </s.TextDescription>
 
           
           <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-              fontFamily: "sans-serif",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
+         
         </s.Container>
       </s.Container>
     </s.Screen>
