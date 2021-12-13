@@ -379,7 +379,7 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
+        <s.Container jc={"center"} ai={"left"} style={{ width: "50%" }}>
          
           <s.TextDescription
             style={{
@@ -396,8 +396,8 @@ function App() {
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
 Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments.  <br/><br/>
@@ -418,12 +418,13 @@ Each NFT is unique and consists of either a string instrument, mic, DJ set, synt
  
 What is the vision for Music Avatars? </s.TextDescription>
 
+
 <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
 
@@ -446,12 +447,13 @@ We want every deserving artist to get a hold of a Music Avatar. <br/><br/></s.Te
 What can I do with a Music Avatar? </s.TextDescription>
 
 
+
 <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
 Music Avatars provide a unique visual and musical identity that makes you stand wherever a visual representation is required. As long as you hold a Music Avatar NFT, you can license it for use as the face of your brand, your online identity (profile picture), sold on T-shirts, advertisements, stickers, mugs, etc. and keep all the earnings for yourself.<br/><br/>
@@ -476,17 +478,84 @@ Who are Music Avatars for? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
 
-Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.<br/><br/>
- 
-Which chain will these NFTs be on? How much does it cost to mint a Music Avatar? How many can I mint for myself?<br/>
-We live on Ethereum The public mint is free. You only need to pay the gas fee associated with the transaction. You are limited to 2 NFTs per address during the mint. <br/>
+Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.<br/><br/></s.TextDescription>
 
-The public mint is scheduled for Sunday, December 19th 2021. <br/><br/></s.TextDescription>
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+ 
+Which chain will these NFTs be on?  </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
+            }}
+          >
+Music Avatars will be on the Ethereum blockchain. <br/><br/></s.TextDescription>
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+ 
+How much does it cost to mint a Music Avatar?  </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
+            }}
+          >
+The public mint (9000 NFTs) is free. The public mint is scheduled for Sunday, December 19th 2021. <br/><br/></s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
+ 
+How many can I mint for myself? </s.TextDescription>
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "var(--primary-text)",
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
+            }}
+          >
+ You are limited to 2 NFTs per address during the mint. <br/><br/></s.TextDescription>
+
+ 
 
 <s.TextDescription
             style={{
@@ -502,15 +571,15 @@ The public mint is scheduled for Sunday, December 19th 2021. <br/><br/></s.TextD
 How many Music Avatar are available for mint? </s.TextDescription>
 
 
+
 <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
-
 
 There are 10,000 Music Avatars in total of which 9,000 are available for the free public mint and the rest reserved for the founding team/marketing.<br/><br/></s.TextDescription>
   
@@ -529,25 +598,37 @@ There are 10,000 Music Avatars in total of which 9,000 are available for the fre
 What started this project?  </s.TextDescription>
 
 
+
 <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Big Shoulders Display',
-              fontSize: '25px',
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
 
 Kolourr (Bruce) started this project with the help of Donald Bough. Special thanks go out to Hashlips.<br/><br/></s.TextDescription>
             
          
+<s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "white",
+              fontFamily: 'Big Shoulders Display',
+              fontWeight: 'bold',
+              fontSize: '40px',
+            }}
+          >
 
+Note  </s.TextDescription>
 
-          <s.TextDescription
+<s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: "sans-serif",
+              fontFamily: 'Libre Baskerville',
+              fontSize: '18px',
             }}
           >
             Please make sure you are connected to the right network (
