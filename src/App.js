@@ -94,6 +94,19 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+export const StyledVideo = styled.div`
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-repeat: repeat-x;
+`;
+
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
@@ -198,15 +211,19 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        style={{ padding: 24, backgroundColor: "var(--primary)", zIndex: 0 }}
       >
+        <StyledVideo>
+          <video autoPlay muted loop id="myVideo" style={{width: '100%' }}>
+            <source src="/config/images/bg.mp4" type="video/mp4"></source>
+          </video>
+        </StyledVideo>
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         <s.SpacerSmall />
-       
+
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          
-          
+
+
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
           </s.Container>
@@ -376,9 +393,9 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          
-          
-          
+
+
+
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
@@ -399,7 +416,7 @@ function App() {
               textAlign: "left",
               color: "white",
               fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
               fontSize: '40px',
             }}
           >
