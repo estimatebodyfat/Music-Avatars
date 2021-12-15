@@ -14,11 +14,12 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   font-weight: 800;
-  color: black;
+  color: white;
   font-size: 20px;
   width: 200px;
   cursor: pointer;
   box-shadow: 4px 4px 0px rgba(255,255,255,0.9);
+  
   //box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   //-webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   //-moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -33,13 +34,13 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: #3995db;
   padding: 10px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 30px;
   color: var(--primary-text);
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -77,7 +78,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border: 4px solid var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -132,6 +133,35 @@ function App() {
     MARKETPLACE: "",
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
+  });
+
+  function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  async function loopAvatar() {
+
+    const imageSequence = [
+      `/config/images/static.gif`,
+      `/config/images/4.png`,
+      `/config/images/static.gif`,
+      `/config/images/3.png`,
+    ];
+    for (let i = 0; true; i++) {
+      const image = imageSequence[i];
+
+      if (document.getElementById('avatarImg')) {
+        document.getElementById('avatarImg').src = image;
+      }
+
+      if (image.includes('static.gif')) { await delay(750) }
+      else { await delay(1500) }
+
+      if (i === imageSequence.length - 1) { i = -1 } //turns into 0 after increment
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    loopAvatar();
   });
 
   const claimNFTs = () => {
@@ -214,19 +244,53 @@ function App() {
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)", zIndex: 0 }}
       >
+        {/* Background video */}
         <StyledVideo>
           <video autoPlay muted loop id="myVideo" style={{width: '100%' }}>
             <source src="/config/images/bg.mp4" type="video/mp4"></source>
           </video>
         </StyledVideo>
 
+        {/* Navbar */}
+        <div style={{width: '100%', position: 'fixed' }}>
+          <a target={'_blank'} href={'https://discord.gg/Nu4xqwTamE'}>
+            <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>
+          </a>
+          <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
+            <i className="fab fa-twitter" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>
+          </a>
+          <a target={'_blank'} href={'https://opensea.io/collection/music-avatars'}>
+            <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+          </a>
+
+          <StyledButton
+              onClick={(e) => {
+                e.preventDefault();
+                dispatch(connect());
+                getData();
+              }}
+              style={{float: 'right', marginRight: '15px'}}
+          >
+            CONNECT
+          </StyledButton>
+        </div>
+
+        {/* Title */}
+        <s.TextTitle
+            style={{
+              textAlign: "center",
+              fontSize: 100,
+              width: '100%',
+              fontWeight: "900",
+              textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
+              fontStyle: 'italic',
+            }}
+        >
+          Music Avatars
+        </s.TextTitle>
+
+        {/* Description container */}
         <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
-          {/*<s.Container flex={1} jc={"center"} ai={"center"}>*/}
-          {/*  <StyledImg alt={"example"} src={"/config/images/example.gif"} />*/}
-          {/*</s.Container>*/}
-
-
-
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -245,49 +309,62 @@ function App() {
               backgroundColor: '#FF3CAC',
               backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
 
-              padding: 24,
+              padding: 36,
               borderRadius: 24,
               boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
 
             }}
           >
-            {/*<StyledLogo alt={"logo"} src={"/config/images/logo.png"} />*/}
             <s.TextTitle
                 style={{
                   textAlign: "center",
-                  fontSize: 70,
+                  fontSize: 40,
                   fontWeight: "900",
-                  textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
-                  fontStyle: 'italic',
+                  color: "var(--accent-text)",
+                  textShadow: `3px 3px 0px rgba(76,109,181,0.9)`,
                 }}
             >
-              Music Avatars
+              Unique Music Identities, One Community
+
             </s.TextTitle>
 
-
-            <s.SpacerSmall />
+            <s.SpacerMedium/>
 
             <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 50,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
+                style={{
+                  textAlign: "center",
+                  fontSize: 18,
+                  color: "var(--accent-text)",
+                }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              Music Avatars are a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like. <br/><br/>
             </s.TextTitle>
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
-            </s.TextDescription>
-            <s.SpacerSmall />
+
+
+            {/*<s.TextTitle*/}
+            {/*  style={{*/}
+            {/*    textAlign: "center",*/}
+            {/*    fontSize: 50,*/}
+            {/*    fontWeight: "bold",*/}
+            {/*    color: "var(--accent-text)",*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  {data.totalSupply} / {CONFIG.MAX_SUPPLY}*/}
+            {/*</s.TextTitle>*/}
+
+            {/*<s.TextDescription*/}
+            {/*  style={{*/}
+            {/*    textAlign: "center",*/}
+            {/*    color: "var(--primary-text)",*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>*/}
+            {/*    {truncate(CONFIG.CONTRACT_ADDRESS, 15)}*/}
+            {/*  </StyledLink>*/}
+            {/*</s.TextDescription>*/}
+
+            {/*<s.SpacerSmall />*/}
+
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
@@ -307,40 +384,36 @@ function App() {
               </>
             ) : (
               <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
-                <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Excluding gas fees.
-                </s.TextDescription>
-                <s.SpacerSmall />
+                {/*<s.TextTitle*/}
+                {/*  style={{ textAlign: "center", color: "var(--accent-text)" }}*/}
+                {/*>*/}
+                {/*  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}*/}
+                {/*  {CONFIG.NETWORK.SYMBOL}.*/}
+                {/*</s.TextTitle>*/}
+
+                {/*<s.SpacerXSmall />*/}
+
+                {/*<s.TextDescription*/}
+                {/*  style={{ textAlign: "center", color: "var(--accent-text)" }}*/}
+                {/*>*/}
+                {/*  Excluding gas fees.*/}
+                {/*</s.TextDescription>*/}
+
+                {/*<s.SpacerSmall />*/}
+
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
-                    <s.TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      Connect to the {CONFIG.NETWORK.NAME} network
-                    </s.TextDescription>
-                    <s.SpacerSmall />
-                    <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                    >
-                      CONNECT
-                    </StyledButton>
+                    {/*<s.TextDescription*/}
+                    {/*  style={{*/}
+                    {/*    textAlign: "center",*/}
+                    {/*    color: "var(--accent-text)",*/}
+                    {/*  }}*/}
+                    {/*>*/}
+                    {/*  Connect to the {CONFIG.NETWORK.NAME} network*/}
+                    {/*</s.TextDescription>*/}
+                    {/*<s.SpacerSmall />*/}
+
                     {blockchain.errorMsg !== "" ? (
                       <>
                         <s.SpacerSmall />
@@ -357,84 +430,126 @@ function App() {
                   </s.Container>
                 ) : (
                   <>
-                    <s.TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      {feedback}
-                    </s.TextDescription>
-                    <s.SpacerMedium />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          decrementMintAmount();
-                        }}
-                      >
-                        -
-                      </StyledRoundButton>
-                      <s.SpacerMedium />
-                      <s.TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "var(--accent-text)",
-                        }}
-                      >
-                        {mintAmount}
-                      </s.TextDescription>
-                      <s.SpacerMedium />
-                      <StyledRoundButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          incrementMintAmount();
-                        }}
-                      >
-                        +
-                      </StyledRoundButton>
-                    </s.Container>
-                    <s.SpacerSmall />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          claimNFTs();
-                          getData();
-                        }}
-                      >
-                        {claimingNft ? "BUSY" : "BUY"}
-                      </StyledButton>
-                    </s.Container>
+                    {/*<s.TextDescription*/}
+                    {/*  style={{*/}
+                    {/*    textAlign: "center",*/}
+                    {/*    color: "var(--accent-text)",*/}
+                    {/*  }}*/}
+                    {/*>*/}
+                    {/*  {feedback}*/}
+                    {/*</s.TextDescription>*/}
+                    {/*<s.SpacerMedium />*/}
                   </>
                 )}
               </>
             )}
-            <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
 
-
-
-          {/*<s.Container flex={1} jc={"center"} ai={"center"}>*/}
-          {/*  <StyledImg*/}
-          {/*    alt={"example"}*/}
-          {/*    src={"/config/images/example.gif"}*/}
-          {/*    style={{ transform: "scaleX(-1)" }}*/}
-          {/*  />*/}
-          {/*</s.Container>*/}
-
-
-
-
         </ResponsiveWrapper>
+
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"left"} style={{ width: "50%" }}>
-         
+
+        {/*<s.Container*/}
+        {/*    flex={2}*/}
+        {/*    jc={"center"}*/}
+        {/*    ai={"center"}*/}
+        {/*    style={{*/}
+        {/*      // backgroundColor: "#2e292c",*/}
+
+        {/*      // backgroundColor: '#4158D0',*/}
+        {/*      // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',*/}
+
+        {/*      // backgroundColor: '#4158D0',*/}
+        {/*      // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',*/}
+
+        {/*      // Picked from: https://cssgradient.io/gradient-backgrounds/*/}
+        {/*      backgroundColor: '#FF3CAC',*/}
+        {/*      backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',*/}
+
+        {/*      padding: 24,*/}
+        {/*      borderRadius: 24,*/}
+        {/*      boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',*/}
+        {/*      maxWidth: 936,*/}
+        {/*    }}*/}
+        {/*>*/}
+
+        <s.SpacerLarge />
+
+        <s.Container ai={"center"} jc={"center"} fd={"row"}>
+          <StyledRoundButton
+              style={{ lineHeight: 0.4, marginRight: '1rem' }}
+              disabled={claimingNft ? 1 : 0}
+              onClick={(e) => {
+                e.preventDefault();
+                decrementMintAmount();
+              }}
+          >
+            -
+          </StyledRoundButton>
+
+          <StyledButton
+              disabled={claimingNft ? 1 : 0}
+              onClick={(e) => {
+                e.preventDefault();
+                claimNFTs();
+                getData();
+              }}
+              style={{width: '100%', padding: '1rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, fontWeight: '900', backgroundColor: '#3995db'}}
+          >
+            {claimingNft ? "BUSY" : `MINT ${mintAmount} AVATAR`}
+          </StyledButton>
+
+          <StyledRoundButton
+              disabled={claimingNft ? 1 : 0}
+              onClick={(e) => {
+                e.preventDefault();
+                incrementMintAmount();
+              }}
+              style={{marginLeft: '1rem'}}
+          >
+            +
+          </StyledRoundButton>
+        </s.Container>
+
+        <s.SpacerLarge />
+
+        {/* Avatars examples */}
+        <s.Container flex={1} jc={"center"} ai={"center"}>
+          <StyledImg
+              id={"avatarImg"}
+              width={300}
+              height={300}
+              alt={"example"}
+              src={"/config/images/3.png"}
+              style={{ transform: "scaleX(-1)"}}
+          />
+        </s.Container>
+
+        <s.SpacerLarge />
+
+        <s.Container jc={"center"} ai={"left"}
+         style={{
+           width: 936,
+           // backgroundColor: "#2e292c",
+
+           // backgroundColor: '#4158D0',
+           // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+
+           // backgroundColor: '#4158D0',
+           // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
+
+           // Picked from: https://cssgradient.io/gradient-backgrounds/
+           backgroundColor: '#FF3CAC',
+           backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
+
+           padding: 36,
+           borderRadius: 24,
+           boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
+
+         }}
+        >
+
           <s.TextDescription
             style={{
               textAlign: "left",
@@ -453,11 +568,10 @@ function App() {
               fontSize: '18px',
             }}
           >
-Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments.  <br/><br/>
 
-Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like. <br/><br/>
+          Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like. <br/><br/>
 
-</s.TextDescription>
+          </s.TextDescription>
 
 <s.TextDescription
             style={{
@@ -468,7 +582,7 @@ Each NFT is unique and consists of either a string instrument, mic, DJ set, synt
               fontSize: '40px',
             }}
           >
- 
+
 What is the vision for Music Avatars? </s.TextDescription>
 
 
@@ -508,7 +622,7 @@ What can I do with a Music Avatar? </s.TextDescription>
             }}
           >
 Music Avatars provide a unique visual and musical identity that makes you stand wherever a visual representation is required. As long as you hold a Music Avatar NFT, you can license it for use as the face of your brand, your online identity (profile picture), sold on T-shirts, advertisements, stickers, mugs, etc. and keep all the earnings for yourself.<br/><br/>
- 
+
 </s.TextDescription>
 
 <s.TextDescription
@@ -529,7 +643,7 @@ Who are Music Avatars for? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
@@ -544,7 +658,7 @@ Music Avatars are primarily geared towards artists and musicians but open to mus
               fontSize: '40px',
             }}
           >
- 
+
 Which chain will these NFTs be on?  </s.TextDescription>
 
 
@@ -566,7 +680,7 @@ Music Avatars will be on the Ethereum blockchain. <br/><br/></s.TextDescription>
               fontSize: '40px',
             }}
           >
- 
+
 How much does it cost to mint a Music Avatar?  </s.TextDescription>
 
 
@@ -574,7 +688,7 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
@@ -590,7 +704,7 @@ The public mint (9000 NFTs) is free. The public mint is scheduled for Sunday, De
               fontSize: '40px',
             }}
           >
- 
+
 How many can I mint for myself? </s.TextDescription>
 
 
@@ -598,13 +712,13 @@ How many can I mint for myself? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
  You are limited to 2 NFTs per address during the mint. <br/><br/></s.TextDescription>
 
- 
+
 
 <s.TextDescription
             style={{
@@ -616,7 +730,7 @@ How many can I mint for myself? </s.TextDescription>
             }}
           >
 
- 
+
 How many Music Avatar are available for mint? </s.TextDescription>
 
 
@@ -625,13 +739,13 @@ How many Music Avatar are available for mint? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
 
 There are 10,000 Music Avatars in total of which 9,000 are available for the free public mint and the rest reserved for the founding team/marketing.<br/><br/></s.TextDescription>
-  
+
 
 
 <s.TextDescription
@@ -652,17 +766,17 @@ What started this project?  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
 
 Kolourr (Bruce) started this project with the help of Donald Bough. Special thanks go out to Hashlips.<br/><br/></s.TextDescription>
-            
-         
+
+
 <s.TextDescription
             style={{
-              textAlign: "center",
+              textAlign: "left",
               color: "white",
               fontWeight: '900',
               fontStyle: 'italic',
@@ -676,7 +790,7 @@ Note  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              
+
               fontSize: '18px',
             }}
           >
@@ -687,9 +801,9 @@ Note  </s.TextDescription>
             gas limit.
           </s.TextDescription>
 
-          
+
           <s.SpacerSmall />
-         
+
         </s.Container>
       </s.Container>
     </s.Screen>
