@@ -13,14 +13,15 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   border: none;
   background-color: var(--secondary);
-  padding: 10px;
-  font-weight: bold;
-  color: var(--secondary-text);
-  width: 100px;
+  font-weight: 800;
+  color: black;
+  font-size: 20px;
+  width: 200px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  box-shadow: 4px 4px 0px rgba(255,255,255,0.9);
+  //box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  //-webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  //-moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   :active {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -218,15 +219,11 @@ function App() {
             <source src="/config/images/bg.mp4" type="video/mp4"></source>
           </video>
         </StyledVideo>
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        <s.SpacerSmall />
 
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-
-
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
+        <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
+          {/*<s.Container flex={1} jc={"center"} ai={"center"}>*/}
+          {/*  <StyledImg alt={"example"} src={"/config/images/example.gif"} />*/}
+          {/*</s.Container>*/}
 
 
 
@@ -236,13 +233,40 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              // backgroundColor: "#2e292c",
+
+              // backgroundColor: '#4158D0',
+              // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+
+              // backgroundColor: '#4158D0',
+              // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
+
+              // Picked from: https://cssgradient.io/gradient-backgrounds/
+              backgroundColor: '#FF3CAC',
+              backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
+
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
+
             }}
           >
+            {/*<StyledLogo alt={"logo"} src={"/config/images/logo.png"} />*/}
+            <s.TextTitle
+                style={{
+                  textAlign: "center",
+                  fontSize: 70,
+                  fontWeight: "900",
+                  textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
+                  fontStyle: 'italic',
+                }}
+            >
+              Music Avatars
+            </s.TextTitle>
+
+
+            <s.SpacerSmall />
+
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -396,13 +420,13 @@ function App() {
 
 
 
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+          {/*<s.Container flex={1} jc={"center"} ai={"center"}>*/}
+          {/*  <StyledImg*/}
+          {/*    alt={"example"}*/}
+          {/*    src={"/config/images/example.gif"}*/}
+          {/*    style={{ transform: "scaleX(-1)" }}*/}
+          {/*  />*/}
+          {/*</s.Container>*/}
 
 
 
@@ -415,8 +439,8 @@ function App() {
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
               fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -426,7 +450,6 @@ function App() {
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
               fontSize: '18px',
             }}
           >
@@ -440,8 +463,8 @@ Each NFT is unique and consists of either a string instrument, mic, DJ set, synt
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -453,7 +476,6 @@ What is the vision for Music Avatars? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
               fontSize: '18px',
             }}
           >
@@ -469,8 +491,8 @@ We want every deserving artist to get a hold of a Music Avatar. <br/><br/></s.Te
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -482,7 +504,6 @@ What can I do with a Music Avatar? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
               fontSize: '18px',
             }}
           >
@@ -494,8 +515,8 @@ Music Avatars provide a unique visual and musical identity that makes you stand 
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -508,7 +529,7 @@ Who are Music Avatars for? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
@@ -519,7 +540,6 @@ Music Avatars are primarily geared towards artists and musicians but open to mus
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
               fontWeight: 'bold',
               fontSize: '40px',
             }}
@@ -532,7 +552,6 @@ Which chain will these NFTs be on?  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
               fontSize: '18px',
             }}
           >
@@ -542,8 +561,8 @@ Music Avatars will be on the Ethereum blockchain. <br/><br/></s.TextDescription>
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -555,7 +574,7 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
@@ -566,8 +585,8 @@ The public mint (9000 NFTs) is free. The public mint is scheduled for Sunday, De
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -579,7 +598,7 @@ How many can I mint for myself? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
@@ -591,8 +610,8 @@ How many can I mint for myself? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -606,7 +625,7 @@ How many Music Avatar are available for mint? </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
@@ -619,8 +638,8 @@ There are 10,000 Music Avatars in total of which 9,000 are available for the fre
             style={{
               textAlign: "left",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -633,7 +652,7 @@ What started this project?  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
@@ -645,8 +664,8 @@ Kolourr (Bruce) started this project with the help of Donald Bough. Special than
             style={{
               textAlign: "center",
               color: "white",
-              fontFamily: 'Big Shoulders Display',
-              fontWeight: 'bold',
+              fontWeight: '900',
+              fontStyle: 'italic',
               fontSize: '40px',
             }}
           >
@@ -657,7 +676,7 @@ Note  </s.TextDescription>
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
-              fontFamily: 'Libre Baskerville',
+              
               fontSize: '18px',
             }}
           >
