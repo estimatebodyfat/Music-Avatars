@@ -54,7 +54,12 @@ export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
   font-weight: 500;
-  line-height: 1.6;
+`;
+
+export const TextTitleSpan = styled.span`
+  color: var(--primary-text);
+  font-size: 22px;
+  font-weight: 500;
 `;
 
 export const TextSubTitle = styled.p`
