@@ -81,7 +81,6 @@ export const StyledImg = styled.img`
   border: 4px solid var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
-  width: 200px;
   margin: 24px 0;
   @media (min-width: 900px) {
     width: 250px;
@@ -100,7 +99,6 @@ export const StyledLink = styled.a`
 export const StyledVideo = styled.div`
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
@@ -271,7 +269,7 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '6vw',
+                fontSize: '90px',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
@@ -565,7 +563,7 @@ function App() {
 
         <s.Container jc={"center"} ai={"left"}
          style={{
-           width: 936,
+           maxWidth: 936,
            // backgroundColor: "#2e292c",
 
            // backgroundColor: '#4158D0',
@@ -866,8 +864,20 @@ What started this project?  </s.TextDescription>
               fontSize: '18px',
             }}
           >
-
-Kolourr (Bruce) started this project with the help of Donald Bough. Special thanks go out to Hashlips.</s.TextDescription>
+            <span>
+              <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
+                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
+                Kolourr (Bruce)
+              </a>
+            </span>
+            started this project with the help of
+            <span>
+              <a href={'https://twitter.com/donaldbough'} target={'_blank'} style={{color: 'white', marginRight: '5px', marginLeft: '5px'}}>
+                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
+                Donald Bough
+              </a>
+            </span>
+             Special thanks go out to Hashlips.</s.TextDescription>
 
           <s.SpacerMedium/>
 
