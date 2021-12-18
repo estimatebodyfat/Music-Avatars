@@ -13,12 +13,12 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   border: none;
   background-color: #3995db;
-  font-weight: 800;
+  font-weight: 900;
   color: white;
   font-size: 20px;
   width: 200px;
   cursor: pointer;
-  box-shadow: 4px 4px 0px rgba(255,255,255,0.9);
+  box-shadow: 5px 5px 0px rgba(255,255,255,0.9);
   
   //box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   //-webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -81,7 +81,7 @@ export const StyledImg = styled.img`
   border: 4px solid var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
-  margin: 24px 0;
+  margin: 36px 0;
   @media (min-width: 900px) {
     width: 250px;
   }
@@ -100,12 +100,12 @@ export const StyledVideo = styled.div`
   width: 100vw;
   height: 100vh;
   position: fixed;
+  object-fit: fill;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
-  background-repeat: repeat-x;
 `;
 
 function App() {
@@ -255,15 +255,15 @@ function App() {
         <div style={{width: '100%', textAlign: 'center' }}>
 
           <div style={{ float:'left',  }}>
-            <a target={'_blank'} href={'https://discord.gg/Nu4xqwTamE'}>
-              <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>
-            </a>
+            {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
+            {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
+            {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '3rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '2rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
-            <a target={'_blank'} href={'https://opensea.io/collection/music-avatars'}>
-              <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>
-            </a>
+            {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
+            {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
+            {/*</a>*/}
           </div>
 
 
@@ -281,28 +281,32 @@ function App() {
           </s.TextTitleSpan>
 
           <div style={{float: 'right', }}>
-            { blockchain.account === "" || blockchain.smartContract === null ? (
-                <span>
-                  <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                      style={{  width: 250, padding: '13px 0'}}
-                  >
-                    CONNECT WALLET
-                  </StyledButton>
-                </span>
-            ) : (
-                <span>
-                  <StyledButton
-                      style={{  width: 250, padding: '13px 0', backgroundColor: '#28A745' }}
-                  >
-                    CONNECTED
-                  </StyledButton>
-                </span>
-            )}
+            <a target={'_blank'} href={'https://twitter.com/musicavatars'} style={{visibility: 'hidden'}}>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '3rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '2rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+            </a>
+
+          {/*  { blockchain.account === "" || blockchain.smartContract === null ? (*/}
+          {/*      <span>*/}
+          {/*        <StyledButton*/}
+          {/*            onClick={(e) => {*/}
+          {/*              e.preventDefault();*/}
+          {/*              dispatch(connect());*/}
+          {/*              getData();*/}
+          {/*            }}*/}
+          {/*            style={{  width: 250, padding: '13px 0'}}*/}
+          {/*        >*/}
+          {/*          CONNECT WALLET*/}
+          {/*        </StyledButton>*/}
+          {/*      </span>*/}
+          {/*  ) : (*/}
+          {/*      <span>*/}
+          {/*        <StyledButton*/}
+          {/*            style={{  width: 250, padding: '13px 0', backgroundColor: '#28A745' }}*/}
+          {/*        >*/}
+          {/*          CONNECTED*/}
+          {/*        </StyledButton>*/}
+          {/*      </span>*/}
+          {/*  )}*/}
           </div>
         </div>
 
@@ -371,7 +375,10 @@ function App() {
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars are a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like. <br/><br/>
+              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features.
+              <br/>
+              <br/>
+              <span style={{ fontStyle: 'italic' }}><b>Our goal? Create the world’s largest decentralized band.</b></span>
             </s.TextTitle>
 
 
@@ -521,7 +528,21 @@ function App() {
 
         {/* Show mint button if wallet connected */}
         { blockchain.account === "" || blockchain.smartContract === null ? (
-            ''
+            <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
+              <StyledButton
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('www.google.com', '_blank');
+                  }}
+                  style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
+              >
+                RESERVE YOUR SPOT
+              </StyledButton>
+
+              <s.SpacerMedium/>
+
+            </s.Container>
+
         ) : (
             <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
               <s.SpacerLarge />
@@ -560,6 +581,18 @@ function App() {
               </StyledRoundButton>
             </s.Container>
         )}
+
+        <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
+          <StyledButton
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('www.google.com', '_blank');
+              }}
+              style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
+          >
+            ENTER YOUR INVITATION
+          </StyledButton>
+        </s.Container>
 
         <s.Container jc={"center"} ai={"left"}
          style={{
@@ -639,46 +672,10 @@ What is the vision for Music Avatars? </s.TextDescription>
             }}
           >
 
-Music Avatars are designed to capture a moment where an artist/musician is one with their instrument. Hence, the instrument/mic with unique facial features. <br/>
-
-We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians who have become 1 with their NFT and choose to hold it forever. <br/>
-
-We want every deserving artist to get a hold of a Music Avatar. </s.TextDescription>
-
-          {/* Avatar djs */}
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-                id={"avatarDjsImg"}
-                width={300}
-                height={300}
-                alt={"example"}
-                src={"/config/images/avatars/142.png"}
-                style={{ transform: "scaleX(-1)"}}
-            />
-          </s.Container>
-
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: '900',
-              fontStyle: 'italic',
-              fontSize: '40px',
-            }}
-          >
-What can I do with a Music Avatar? </s.TextDescription>
-
-
-
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-              fontSize: '18px',
-            }}
-          >
-Music Avatars provide a unique visual and musical identity that makes you stand wherever a visual representation is required. As long as you hold a Music Avatar NFT, you can license it for use as the face of your brand, your online identity (profile picture), sold on T-shirts, advertisements, stickers, mugs, etc. and keep all the earnings for yourself.
-
+  Music Avatars aims to be a community of like-minded creators/artists/enthusiasts bound by their genuine love for music. Our NFTs are designed to capture a moment where an artist/musician is one with their instrument.
+  <br/>
+  <br/>
+  When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians who have become 1 with their NFT and hold it forever.
 </s.TextDescription>
 
           {/* Avatar guitars */}
@@ -693,30 +690,78 @@ Music Avatars provide a unique visual and musical identity that makes you stand 
             />
           </s.Container>
 
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: '900',
-              fontStyle: 'italic',
-              fontSize: '40px',
-            }}
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "white",
+                fontWeight: '900',
+                fontStyle: 'italic',
+                fontSize: '40px',
+              }}
           >
+            Benefits of holding Music Avatars </s.TextDescription>
 
-Who are Music Avatars for? </s.TextDescription>
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
 
-
-
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-
-              fontSize: '18px',
-            }}
+                fontSize: '18px',
+              }}
           >
+            Once we hit a target secondary sell through percentage, we will set up the following items:
+          </s.TextDescription>
 
-Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.</s.TextDescription>
+          <ul style={{ color: 'white', fontSize: '18px',  }}>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 00% </span> Access to a community of songwriters, producers, artists and developers </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 10% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 30% </span> Regular Competitions for Musicians/Artists/Developers </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span>
+              Songboard "<span style={{fontStyle: 'italic'}}>Chaotic vibey place where you can collab and make fun weird songs you’d be too embarrassed to post anywhere</span>"
+              <span>
+                <a href={'https://twitter.com/thisisneer'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
+                  <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
+                   @Neer
+                </a>
+              </span>)
+            </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 70% </span> Member Exclusive Merch store </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 90% </span> Yearly Event for Members </li>
+          </ul>
+
+          {/* Avatar djs */}
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg
+                id={"avatarDjsImg"}
+                width={300}
+                height={300}
+                alt={"example"}
+                src={"/config/images/avatars/142.png"}
+                style={{ transform: "scaleX(-1)"}}
+            />
+          </s.Container>
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "white",
+                fontWeight: '900',
+                fontStyle: 'italic',
+                fontSize: '40px',
+              }}
+          >
+            What can I do with a Music Avatar? </s.TextDescription>
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
+                fontSize: '18px',
+              }}
+          >
+            As a Music Avatar NFT hodler, you can license it for use as the face of your brand, your online identity (profile picture), Soundcloud Profile Pictures, Album Covers and even use it for advertisements and stickers at your shows and keep all the earnings for yourself.
+
+          </s.TextDescription>
 
           {/* Avatar mics */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -730,26 +775,30 @@ Music Avatars are primarily geared towards artists and musicians but open to mus
             />
           </s.Container>
 
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: 'bold',
-              fontSize: '40px',
-            }}
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "white",
+                fontWeight: '900',
+                fontStyle: 'italic',
+                fontSize: '40px',
+              }}
           >
 
-Which chain will these NFTs be on?  </s.TextDescription>
+            Who are Music Avatars for? </s.TextDescription>
 
 
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-              fontSize: '18px',
-            }}
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
+
+                fontSize: '18px',
+              }}
           >
-Music Avatars will be on the Ethereum blockchain. </s.TextDescription>
+
+            Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.</s.TextDescription>
 
           {/* Avatar drums */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -762,6 +811,29 @@ Music Avatars will be on the Ethereum blockchain. </s.TextDescription>
                 style={{ transform: "scaleX(-1)"}}
             />
           </s.Container>
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "white",
+                fontWeight: 'bold',
+                fontSize: '40px',
+              }}
+          >
+
+            Which chain will these NFTs be on?  </s.TextDescription>
+
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
+                fontSize: '18px',
+              }}
+          >
+            Music Avatars will be on the Ethereum blockchain. </s.TextDescription>
+
+          <s.SpacerMedium/>
 
 <s.TextDescription
             style={{
