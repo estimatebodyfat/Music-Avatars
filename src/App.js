@@ -244,7 +244,7 @@ function App() {
       >
         {/* Background video */}
         <StyledVideo>
-          <video playsinline autoPlay muted loop id="myVideo" style={{width: '100%' }} poster="/config/images/video_cover.png">
+          <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%' }} poster="/config/images/video_cover.png">
             <source src="/config/images/bg.mp4" type="video/mp4"></source>
           </video>
           <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%'}} poster="/config/images/video_cover.png">
