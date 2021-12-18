@@ -97,14 +97,12 @@ export const StyledLink = styled.a`
 `;
 
 export const StyledVideo = styled.div`
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  object-fit: fill;
-  left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
+  left: 0;
   z-index: -1;
 `;
 
@@ -246,7 +244,16 @@ function App() {
       >
         {/* Background video */}
         <StyledVideo>
-          <video autoPlay muted loop id="myVideo" style={{width: '100%' }}>
+          <video playsinline autoPlay muted loop id="myVideo" style={{width: '100%' }}>
+            <source src="/config/images/bg.mp4" type="video/mp4"></source>
+          </video>
+          <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%'}}>
+            <source src="/config/images/bg.mp4" type="video/mp4"></source>
+          </video>
+          <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%'}}>
+            <source src="/config/images/bg.mp4" type="video/mp4"></source>
+          </video>
+          <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%'}}>
             <source src="/config/images/bg.mp4" type="video/mp4"></source>
           </video>
         </StyledVideo>
@@ -280,11 +287,7 @@ function App() {
             Music Avatars
           </s.TextTitleSpan>
 
-          <div style={{float: 'right', }}>
-            <a target={'_blank'} href={'https://twitter.com/musicavatars'} style={{visibility: 'hidden'}}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '3rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '2rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
-            </a>
-
+          {/*<div style={{float: 'right', }}>*/}
           {/*  { blockchain.account === "" || blockchain.smartContract === null ? (*/}
           {/*      <span>*/}
           {/*        <StyledButton*/}
@@ -307,7 +310,7 @@ function App() {
           {/*        </StyledButton>*/}
           {/*      </span>*/}
           {/*  )}*/}
-          </div>
+          {/*</div>*/}
         </div>
 
         {/* Title */}
