@@ -377,8 +377,7 @@ function App() {
             >
               Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. <br/>
               <br/>Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. 
-              <br/>
-              <br/>
+              
               {/* <span style={{ fontSize: 20, color: "var(--accent-text)", }}><b>Our Goal? </b></span><br/><br/>
               <span style={{ fontSize: 30,fontStyle: 'italic' }}><b>Create The World’s Largest Decentralized Band</b></span> */}
 
@@ -526,22 +525,30 @@ function App() {
 
 
             }}
+
+
+            
           >
       
             <s.SpacerMedium/>
 
-            <s.TextTitle
-               
-            >
-  
 
-              <span style={{ fontSize: 30,textAlign: "center", }}>Let's create the<b> <u>Largest Decentralized Band</u> together🤘</b></span>
-             
-          
+
+
+
+            <s.TextTitle
+                style={{
+                  textAlign: "center",
+                  fontSize: 22,
+                  color: "var(--accent-text)",
+                }}
+            >
+
+            Let's create the <span style={{ fontSize: 25,textAlign: "center", }}><b> <u>Largest Decentralized Band</u> </b></span>together🤘
 
             </s.TextTitle>
 
-          
+
          
           </s.Container>
 
