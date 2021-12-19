@@ -263,7 +263,7 @@ function App() {
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '1rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
@@ -273,7 +273,7 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '50px',
+                fontSize: '39px',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
@@ -356,7 +356,7 @@ function App() {
             <s.TextTitle
                 style={{
                   textAlign: "center",
-                  fontSize: 40,
+                  fontSize: 30,
                   fontWeight: "900",
                   color: "var(--accent-text)",
                   textShadow: `3px 3px 0px rgba(76,109,181,0.9)`,
@@ -535,7 +535,7 @@ function App() {
             >
   
 
-              <span style={{ fontSize: 30,textAlign: "center", }}>Let's build <b>The World’s <u>Largest Decentralized Band</u> together🤘</b></span>
+              <span style={{ fontSize: 30,textAlign: "center", }}>Let's create the<b> <u>Largest Decentralized Band</u> together🤘</b></span>
              
           
 
