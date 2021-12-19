@@ -263,7 +263,7 @@ function App() {
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '3rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '2rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '1rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
@@ -273,7 +273,7 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '90px',
+                fontSize: '50px',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
@@ -346,9 +346,9 @@ function App() {
               backgroundColor: '#FF3CAC',
               backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
 
-              marginTop: '2rem',
+              marginTop: '0.5rem',
               padding: 36,
-              borderRadius: 24,
+              borderRadius: 15,
               boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
 
             }}
@@ -375,10 +375,13 @@ function App() {
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features.
+              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. <br/>
+              <br/>Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. 
               <br/>
               <br/>
-              <span style={{ fontStyle: 'italic' }}><b>Our goal? Create the world’s largest decentralized band.</b></span>
+              {/* <span style={{ fontSize: 20, color: "var(--accent-text)", }}><b>Our Goal? </b></span><br/><br/>
+              <span style={{ fontSize: 30,fontStyle: 'italic' }}><b>Create The World’s Largest Decentralized Band</b></span> */}
+
             </s.TextTitle>
 
 
@@ -488,6 +491,62 @@ function App() {
 
         </ResponsiveWrapper>
 
+
+
+
+        {/* Description container */}
+        <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
+          <s.SpacerLarge />
+          <s.Container
+            flex={2}
+            jc={"center"}
+            ai={"center"}
+            style={{
+              // backgroundColor: "#2e292c",
+
+              // backgroundColor: '#4158D0',
+              // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+
+              // backgroundColor: '#4158D0',
+              // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
+
+              // Picked from: https://cssgradient.io/gradient-backgrounds/
+              // backgroundColor: '#FF3CAC',
+              // backgroundImage: 'linear-gradient(225deg, #FF2CAC 0%, #784BA0 50%, #2B86C5 100%)',
+
+
+              backgroundColor: '#FFE53B',
+              backgroundImage: 'linear-gradient(135deg, #FFE53B 0%, #FF2525 74%)',
+              marginTop: '1.5rem',
+              padding: 10,
+              borderRadius: 10,
+              boxShadow: '5px 5px 0px rgba(255,255,255,0.8)',         
+
+     
+
+
+            }}
+          >
+      
+            <s.SpacerMedium/>
+
+            <s.TextTitle
+               
+            >
+  
+
+              <span style={{ fontSize: 30,textAlign: "center", }}>Let's build <b>The World’s <u>Largest Decentralized Band</u> together🤘</b></span>
+             
+          
+
+            </s.TextTitle>
+
+          
+         
+          </s.Container>
+
+        </ResponsiveWrapper>
+
         <s.SpacerSmall />
 
         {/*<s.Container*/}
@@ -532,7 +591,7 @@ function App() {
               <StyledButton
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open('www.google.com', '_blank');
+                    window.open('https://forms.gle/vyS9T97M5Qc4WcTS9', '_blank');
                   }}
                   style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
               >
@@ -583,7 +642,7 @@ function App() {
         )}
 
         <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
-          <StyledButton
+          {/* <StyledButton
               onClick={(e) => {
                 e.preventDefault();
                 window.open('www.google.com', '_blank');
@@ -591,7 +650,7 @@ function App() {
               style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
           >
             ENTER YOUR INVITATION
-          </StyledButton>
+          </StyledButton> */}
         </s.Container>
 
         <s.Container jc={"center"} ai={"left"}
@@ -616,28 +675,9 @@ function App() {
          }}
         >
 
-          <s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: '900',
-              fontStyle: 'italic',
-              fontSize: '40px',
-            }}
-          >
-            What are Music Avatars?  </s.TextDescription>
+         
 
-            <s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-              fontSize: '18px',
-            }}
-          >
-
-          Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. Feel free to use it any way you like.
-
-          </s.TextDescription>
+           
 
           {/* Avatar synths */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -672,10 +712,12 @@ What is the vision for Music Avatars? </s.TextDescription>
             }}
           >
 
-  Music Avatars aims to be a community of like-minded creators/artists/enthusiasts bound by their genuine love for music. Our NFTs are designed to capture a moment where an artist/musician is one with their instrument.
+Music Avatars aims to be a community of like-minded creators/artists/enthusiasts bound by their genuine love for music. Our NFTs are designed to capture a moment where an artist/musician is one with their instrument. 
   <br/>
   <br/>
-  When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians who have become 1 with their NFT and hold it forever.
+  When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
+
+
 </s.TextDescription>
 
           {/* Avatar guitars */}
@@ -699,7 +741,7 @@ What is the vision for Music Avatars? </s.TextDescription>
                 fontSize: '40px',
               }}
           >
-            Benefits of holding Music Avatars </s.TextDescription>
+            What are the benefits of holding a Music Avatar NFT? </s.TextDescription>
 
           <s.TextDescription
               style={{
@@ -709,7 +751,10 @@ What is the vision for Music Avatars? </s.TextDescription>
                 fontSize: '18px',
               }}
           >
-            Once we hit a target secondary sell through percentage, we will set up the following items:
+As a Music Avatar hodler, you hold the copyright of the NFT and can choose to do with it commercially anything you please.  <br/>
+  <br/>
+
+You also get access to the items below once we hit each percentage of the Music Avatars public mint: 
           </s.TextDescription>
 
           <ul style={{ color: 'white', fontSize: '18px',  }}>
@@ -717,17 +762,30 @@ What is the vision for Music Avatars? </s.TextDescription>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 10% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 30% </span> Regular Competitions for Musicians/Artists/Developers </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span>
-              Songboard "<span style={{fontStyle: 'italic'}}>Chaotic vibey place where you can collab and make fun weird songs you’d be too embarrassed to post anywhere</span>"
-              <span>
-                <a href={'https://twitter.com/thisisneer'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
-                  <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                   @Neer
-                </a>
-              </span>)
+              Songboard <span style={{fontStyle: 'italic'}}>(the world’s largest decentralized band) </span>
+               
             </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 70% </span> Member Exclusive Merch store </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 90% </span> Yearly Event for Members </li>
           </ul>
+
+          <br/>
+  <br/>
+
+
+  <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
+
+                fontSize: '18px',
+              }}
+          >
+          In addition to the above, 20% of the public mint and 20% of secondary sales will be allocated to the continuous development of the Music Avatar community.  
+
+          </s.TextDescription>
+
+
 
           {/* Avatar djs */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -759,7 +817,11 @@ What is the vision for Music Avatars? </s.TextDescription>
                 fontSize: '18px',
               }}
           >
-            As a Music Avatar NFT hodler, you can license it for use as the face of your brand, your online identity (profile picture), Soundcloud Profile Pictures, Album Covers and even use it for advertisements and stickers at your shows and keep all the earnings for yourself.
+Music Avatars provide a unique visual and musical identity that helps you stand out as an individual as well as be part of a community. 
+   <br/>
+  <br/>
+
+  As a Music Avatar NFT hodler, you can license it for use as the face of your brand, your online identity (profile picture), Soundcloud Profile Pictures, Album Covers and even use it for advertisements and stickers at your shows and keep all the earnings for yourself.
 
           </s.TextDescription>
 
@@ -798,7 +860,7 @@ What is the vision for Music Avatars? </s.TextDescription>
               }}
           >
 
-            Music Avatars are primarily geared towards artists and musicians but open to music lovers worldwide.</s.TextDescription>
+Music Avatars are primarily geared towards artists/musicians/creatives but open to music enthusiasts worldwide.</s.TextDescription>
 
           {/* Avatar drums */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -812,28 +874,7 @@ What is the vision for Music Avatars? </s.TextDescription>
             />
           </s.Container>
 
-          <s.TextDescription
-              style={{
-                textAlign: "left",
-                color: "white",
-                fontWeight: 'bold',
-                fontSize: '40px',
-              }}
-          >
-
-            Which chain will these NFTs be on?  </s.TextDescription>
-
-
-          <s.TextDescription
-              style={{
-                textAlign: "left",
-                color: "var(--primary-text)",
-                fontSize: '18px',
-              }}
-          >
-            Music Avatars will be on the Ethereum blockchain. </s.TextDescription>
-
-          <s.SpacerMedium/>
+         
 
 <s.TextDescription
             style={{
@@ -856,7 +897,10 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
               fontSize: '18px',
             }}
           >
-The public mint (9000 NFTs) is free. The public mint is scheduled for Sunday, December 19th 2021. </s.TextDescription>
+Music Avatars live on the Ethereum blockchain. Each NFT will cost 0.05 ETH. You will have the opportunity of minting 2 NFTs right here on this website. <br/>   <br/>
+
+To get notified of the public mint and gain access to our discord, make sure to complete the form by clicking ‘Reserve My Spot’. 
+ </s.TextDescription>
 
           <s.SpacerMedium/>
 
@@ -870,7 +914,7 @@ The public mint (9000 NFTs) is free. The public mint is scheduled for Sunday, De
             }}
           >
 
-How many can I mint for myself? </s.TextDescription>
+How many Music Avatar are available for mint?</s.TextDescription>
 
           <s.SpacerMedium/>
 
@@ -882,7 +926,7 @@ How many can I mint for myself? </s.TextDescription>
               fontSize: '18px',
             }}
           >
- You are limited to 2 NFTs per address during the mint. </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs are reserved for the founding team.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
