@@ -263,10 +263,10 @@ function App() {
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.25rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '0.5rem', boxShadow: '2px 2px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
-              <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.5rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.25rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '0.25rem', boxShadow: '2px 2px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
@@ -276,7 +276,7 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '4em',
+                fontSize: '4.25em',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
