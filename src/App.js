@@ -907,33 +907,9 @@ How many Music Avatar are available for mint?</s.TextDescription>
 
           <s.SpacerMedium/>
 
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: '900',
-              fontStyle: 'italic',
-              fontSize: '40px',
-            }}
-          >
+ 
 
-
-How many Music Avatar are available for mint? </s.TextDescription>
-
-          <s.SpacerMedium/>
-
-<s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "var(--primary-text)",
-
-              fontSize: '18px',
-            }}
-          >
-
-There are 10,000 Music Avatars in total of which 9,000 are available for the free public mint and the rest reserved for the founding team/marketing.</s.TextDescription>
-
-          <s.SpacerMedium/>
+ 
 
 <s.TextDescription
             style={{
