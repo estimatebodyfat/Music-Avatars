@@ -699,7 +699,7 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
                 fontSize: '18px',
               }}
           >
-As a Music Avatar hodler, you hold the copyright of the NFT and can choose to do with it commercially anything you please.  <br/>
+As a Music Avatar hodler, you hold the copyright of the NFT and can do with it commercially anything you please.  <br/>
   <br/>
 
 You also get access to the items below once we hit each percentage of the Music Avatars public mint: 
@@ -729,7 +729,7 @@ You also get access to the items below once we hit each percentage of the Music 
                 fontSize: '18px',
               }}
           >
-          In addition to the above, 20% of the public mint and 20% of secondary sales will be allocated to the continuous development of the Music Avatar community.  
+          In addition to the above, 20% of the public mint and 20% of secondary sales will be allocated to the continuous development of the Music Avatars community.  
 
           </s.TextDescription>
 
@@ -804,7 +804,7 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
                 fontSize: '18px',
               }}
           >
-A community with thousands of musicians and creators coming together to create music. <br/><br/>As a Music Avatars holder, you automatically get a spot in the band where using our Soundboard we’ll create songs and vote on decisions like the kind of music we want to make. Look forward to a lot of collaboration, learning and fun. We need your input on ways to make this awesome.
+A community with thousands of musicians and creators coming together to create music. <br/><br/>As a Music Avatars holder, you automatically get a spot in the band where using our Soundboard we’ll create songs and vote on decisions like the kind of music we want to make. Look forward to a lot of collaboration, learning and fun. We need your input on ways to make it awesome.
 
           </s.TextDescription>
 
@@ -874,9 +874,9 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
           >
 Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-Each NFT will cost 0.05 ETH to mint. You will have the opportunity of minting 2 NFTs right here on this website. <br/>   <br/>
+Each NFT will cost 0.05 ETH to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
 
-To get notified of the public mint and gain access to our discord, make sure to complete our small application form by clicking 'Request My Invitation'. 
+To get notified of the public mint and gain access to our discord, complete our application form by clicking on 'Request My Invitation' above. 
  </s.TextDescription>
 
           <s.SpacerMedium/>
@@ -903,7 +903,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs are reserved for the founding team/marketing initiatives.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
