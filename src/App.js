@@ -242,8 +242,8 @@ function App() {
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)", zIndex: 0 }}
       >
-        {/* Background video */}
-        <StyledVideo>
+            {/* Background video */}
+            <StyledVideo>
           <video playsInline autoPlay muted loop id="myVideo" style={{width: '100%' }} poster="/config/images/video_cover.png">
             <source src="/config/images/bg.mp4" type="video/mp4"></source>
           </video>
