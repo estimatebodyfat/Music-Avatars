@@ -258,15 +258,15 @@ function App() {
         {/* Navbar */}
         <div style={{width: '100%', textAlign: 'center' }}>
 
-          <div style={{ position: 'fixed', top: 0, left:0  }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, margin: '5px 0 0 0'  }}>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', margin: '.3em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
-              <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.5rem', margin: '.3em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.5rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
