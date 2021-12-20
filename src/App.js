@@ -258,12 +258,15 @@ function App() {
         {/* Navbar */}
         <div style={{width: '100%', textAlign: 'center' }}>
 
-          <div style={{ float:'left',  }}>
+          <div style={{ position: 'fixed', top: 0, left:0  }}>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
             <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
-              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+              <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.5rem', margin: '.3em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
+            </a>
+            <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
+              <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.5rem', margin: '.3em', padding: '.5rem', borderRadius: '1rem', marginLeft: '-0.5rem', boxShadow: '4px 4px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
@@ -273,12 +276,11 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '39px',
+                fontSize: '4em',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
                 justifyContent: 'center',
-                marginBottom: '10px',
               }}
           >
             Music Avatars
@@ -326,31 +328,20 @@ function App() {
         {/*  </s.TextTitle>*/}
         {/*</div>*/}
 
+        <s.SpacerMedium/>
+
         {/* Description container */}
         <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
-          <s.SpacerLarge />
           <s.Container
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
-              // backgroundColor: "#2e292c",
-
-              // backgroundColor: '#4158D0',
-              // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-
-              // backgroundColor: '#4158D0',
-              // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
-
-              // Picked from: https://cssgradient.io/gradient-backgrounds/
               backgroundColor: '#FF3CAC',
               backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
-
-              marginTop: '0.5rem',
               padding: 36,
               borderRadius: 15,
               boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
-
             }}
           >
             <s.TextTitle
@@ -363,7 +354,6 @@ function App() {
                 }}
             >
               Unique Music Identities, One Community
-
             </s.TextTitle>
 
             <s.SpacerMedium/>
@@ -371,18 +361,12 @@ function App() {
             <s.TextTitle
                 style={{
                   textAlign: "center",
-                  fontSize: 18,
+                  fontSize: 20,
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. <br/>
-              <br/>Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features. 
-              
-              {/* <span style={{ fontSize: 20, color: "var(--accent-text)", }}><b>Our Goal? </b></span><br/><br/>
-              <span style={{ fontSize: 30,fontStyle: 'italic' }}><b>Create The World’s Largest Decentralized Band</b></span> */}
-
+              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features.
             </s.TextTitle>
-
 
             {/*<s.TextTitle*/}
             {/*  style={{*/}
@@ -487,74 +471,41 @@ function App() {
               </>
             )}
           </s.Container>
-
         </ResponsiveWrapper>
 
-
-
+        <s.SpacerSmall/>  {/* Use small in addition to standard medium because container shadow takes up unconsidered space */}
+        <s.SpacerMedium/>
 
         {/* Description container */}
         <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
-          <s.SpacerLarge />
           <s.Container
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
-              // backgroundColor: "#2e292c",
-
-              // backgroundColor: '#4158D0',
-              // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-
-              // backgroundColor: '#4158D0',
-              // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
-
-              // Picked from: https://cssgradient.io/gradient-backgrounds/
-              // backgroundColor: '#FF3CAC',
-              // backgroundImage: 'linear-gradient(225deg, #FF2CAC 0%, #784BA0 50%, #2B86C5 100%)',
-
-
-              backgroundColor: '#FFE53B',
-              backgroundImage: 'linear-gradient(135deg, #FFE53B 0%, #FF2525 74%)',
-              marginTop: '1.5rem',
-              padding: 10,
               borderRadius: 10,
-              boxShadow: '5px 5px 0px rgba(255,255,255,0.8)',         
-
-     
-
-
+              backgroundColor: 'rgba(0,0,0,0.7)',
+              padding: '1.5rem 1rem',
             }}
-
-
-            
           >
-      
-            <s.SpacerMedium/>
-
-
-
-
-
             <s.TextTitle
                 style={{
                   textAlign: "center",
-                  fontSize: 22,
+                  fontSize: 28,
+                  fontWeight: 900,
                   color: "var(--accent-text)",
                 }}
             >
-
-            Let's create the <span style={{ fontSize: 25,textAlign: "center", }}><b> <u>Largest Decentralized Band</u> </b></span>together🤘
-
+              🤘
+              <span style={{fontStyle: 'italic', padding: '0 15px'}}>
+                Let's create the
+                 <span><b> <u>Largest Decentralized Band</u> </b></span>
+                together
+              </span>
+              🤘
             </s.TextTitle>
-
-
-         
           </s.Container>
-
         </ResponsiveWrapper>
-
-        <s.SpacerSmall />
 
         {/*<s.Container*/}
         {/*    flex={2}*/}
@@ -580,6 +531,8 @@ function App() {
         {/*    }}*/}
         {/*>*/}
 
+        <s.SpacerMedium/>
+
         {/* Avatars examples */}
         <s.Container flex={1} jc={"center"} ai={"center"}>
           <StyledImg
@@ -588,13 +541,15 @@ function App() {
               height={300}
               alt={"example"}
               src={"/config/images/avatars/3.png"}
-              style={{ transform: "scaleX(-1)"}}
+              style={{ transform: "scaleX(-1)", margin: 0, }}
           />
         </s.Container>
 
+        <s.SpacerMedium/>
+
         {/* Show mint button if wallet connected */}
         { blockchain.account === "" || blockchain.smartContract === null ? (
-            <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
+            <s.Container ai={"center"} jc={"center"} fd={"row"} >
               <StyledButton
                   onClick={(e) => {
                     e.preventDefault();
@@ -602,13 +557,9 @@ function App() {
                   }}
                   style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
               >
-                RESERVE YOUR SPOT
+                REQUEST AN INVITATION
               </StyledButton>
-
-              <s.SpacerMedium/>
-
             </s.Container>
-
         ) : (
             <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
               <s.SpacerLarge />
@@ -648,44 +599,33 @@ function App() {
             </s.Container>
         )}
 
-        <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
+        {/* Invite btn */}
+        {/*<s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>*/}
           {/* <StyledButton
               onClick={(e) => {
                 e.preventDefault();
-                window.open('www.google.com', '_blank');
+                window.open('https://forms.gle/Hstaui9PhBZirG9o8', '_blank');
               }}
               style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
           >
             ENTER YOUR INVITATION
           </StyledButton> */}
-        </s.Container>
+        {/*</s.Container>*/}
+
+        <s.SpacerMedium/>
+        <s.SpacerSmall/>  {/* Use small in addition to standard medium because container shadow takes up unconsidered space */}
 
         <s.Container jc={"center"} ai={"left"}
          style={{
            maxWidth: 936,
-           // backgroundColor: "#2e292c",
-
-           // backgroundColor: '#4158D0',
-           // backgroundImage: 'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
-
-           // backgroundColor: '#4158D0',
-           // backgroundImage: 'linear-gradient(43deg, #4158D0 24%, #C850C0 70%, #FFCC70 100%)',
-
            // Picked from: https://cssgradient.io/gradient-backgrounds/
            backgroundColor: '#FF3CAC',
            backgroundImage: 'linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)',
-
            padding: 36,
            borderRadius: 24,
            boxShadow: '8px 8px 0px rgba(255,255,255,0.8)',
-
          }}
         >
-
-         
-
-           
-
           {/* Avatar synths */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
