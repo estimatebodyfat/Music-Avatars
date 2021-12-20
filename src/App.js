@@ -663,9 +663,10 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
   <br/>
   <br/>
   When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
-
-
 </s.TextDescription>
+
+  
+
 
           {/* Avatar guitars */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -784,6 +785,44 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
             />
           </s.Container>
 
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "white",
+                fontWeight: '900',
+                fontStyle: 'italic',
+                fontSize: '40px',
+              }}
+          >
+            What is the world’s largest decentralized band? </s.TextDescription>
+
+          <s.TextDescription
+              style={{
+                textAlign: "left",
+                color: "var(--primary-text)",
+                fontSize: '18px',
+              }}
+          >
+A community with thousands of musicians and creators coming together to create music. <br/><br/>As a Music Avatars holder, you automatically get a spot in the band where using our Soundboard we’ll create songs and vote on decisions like the kind of music we want to make. Look forward to a lot of collaboration, learning and fun. We need your input on ways to make this awesome.
+
+          </s.TextDescription>
+
+
+   {/* Avatar drums */}
+   <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg
+                id={"avatarDrumsImg"}
+                width={300}
+                height={300}
+                alt={"example"}
+                src={"/config/images/avatars/290.png"}
+                style={{ transform: "scaleX(-1)"}}
+            />
+          </s.Container>
+
+          
+
           <s.TextDescription
               style={{
                 textAlign: "left",
@@ -807,20 +846,9 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
               }}
           >
 
-Music Avatars are primarily geared towards artists/musicians/creatives but open to music enthusiasts worldwide.</s.TextDescription>
+Music Avatars are primarily geared towards artists/musicians/creatives but open to music enthusiasts worldwide.<br/><br/></s.TextDescription>
 
-          {/* Avatar drums */}
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-                id={"avatarDrumsImg"}
-                width={300}
-                height={300}
-                alt={"example"}
-                src={"/config/images/avatars/290.png"}
-                style={{ transform: "scaleX(-1)"}}
-            />
-          </s.Container>
-
+       
          
 
 <s.TextDescription
@@ -844,9 +872,11 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
               fontSize: '18px',
             }}
           >
-Music Avatars live on the Ethereum blockchain. Each NFT will cost 0.05 ETH. You will have the opportunity of minting 2 NFTs right here on this website. <br/>   <br/>
+Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-To get notified of the public mint and gain access to our discord, make sure to complete the form by clicking ‘Reserve My Spot’. 
+Each NFT will cost 0.05 ETH to mint. You will have the opportunity of minting 2 NFTs right here on this website. <br/>   <br/>
+
+To get notified of the public mint and gain access to our discord, make sure to complete our small application form by clicking 'Request My Invitation'. 
  </s.TextDescription>
 
           <s.SpacerMedium/>
@@ -873,7 +903,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs are reserved for the founding team.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs are reserved for the founding team/marketing initiatives.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
@@ -930,7 +960,7 @@ What started this project?  </s.TextDescription>
             <span>
               <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Kolourr (Bruce)
+                Kolourr (Bruce Rebello)
               </a>
             </span>
             started this project with the help of
@@ -940,11 +970,11 @@ What started this project?  </s.TextDescription>
                 Donald Bough
               </a>
             </span>
-             Special thanks go out to Hashlips.</s.TextDescription>
+             </s.TextDescription>
 
           <s.SpacerMedium/>
 
-<s.TextDescription
+{/* <s.TextDescription
             style={{
               textAlign: "left",
               color: "white",
@@ -954,9 +984,9 @@ What started this project?  </s.TextDescription>
             }}
           >
 
-Note  </s.TextDescription>
+Note  </s.TextDescription> */}
 
-<s.TextDescription
+{/* <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
@@ -969,7 +999,7 @@ Note  </s.TextDescription>
             Once you make the purchase, you cannot undo this action. We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
-          </s.TextDescription>
+          </s.TextDescription> */}
 
 
           <s.SpacerSmall />
