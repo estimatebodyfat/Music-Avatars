@@ -967,13 +967,7 @@ What started this project?  </s.TextDescription>
 <a id="form">Application Form</a>  <br/></s.TextDescription>
 
 
-          
- 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="640" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        
-
-         
- 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="100%" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
 
         
 
