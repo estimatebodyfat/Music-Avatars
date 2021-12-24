@@ -551,13 +551,15 @@ function App() {
         { blockchain.account === "" || blockchain.smartContract === null ? (
             <s.Container ai={"center"} jc={"center"} fd={"row"} >
               <StyledButton
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open('https://forms.gle/vyS9T97M5Qc4WcTS9', '_blank');
-                  }}
-                  style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
+                //   onClick={(e) => {
+                //     e.preventDefault();
+                //     window.open('https://forms.gle/vyS9T97M5Qc4WcTS9', '_blank');
+                //   }}
+                
+
+                 style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
               >
-                REQUEST AN INVITATION
+              <a href="#form">  REQUEST AN INVITATION </a>
               </StyledButton>
             </s.Container>
         ) : (
@@ -944,11 +946,36 @@ What started this project?  </s.TextDescription>
               <a href={'https://twitter.com/donaldbough'} target={'_blank'} style={{color: 'white', marginRight: '5px', marginLeft: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
                 Donald Bough
-              </a>
+              </a><br/><br/>
             </span>
              </s.TextDescription>
 
-          <s.SpacerMedium/>
+
+
+
+
+<s.TextDescription
+            style={{
+              textAlign: "left",
+              color: "white",
+              fontWeight: '900',
+              fontStyle: 'italic',
+              fontSize: '40px',
+            }}
+          >
+
+<a id="form">Application Form</a>  <br/></s.TextDescription>
+
+
+          
+ 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="640" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        
+
+         
+ 
+
+        
 
 {/* <s.TextDescription
             style={{
