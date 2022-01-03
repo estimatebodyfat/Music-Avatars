@@ -365,7 +365,11 @@ function App() {
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars is a collection of 10,000 NFTs for artists who embody their instruments. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features.
+              Music Avatars is a community for Independent Artists. <br/><br/>Our collection of 10,000 NFTs are designed to capture a moment where an artist/musician is one with their instrument. Each NFT is unique and consists of either a string instrument, mic, DJ set, synthesizer, or drum with distinct facial features.
+
+              <br/><br/> We take the best of the PFP NFT world and apply it to the web3 music.
+
+
             </s.TextTitle>
 
             {/*<s.TextTitle*/}
@@ -661,10 +665,13 @@ What is the vision for Music Avatars? </s.TextDescription>
             }}
           >
 
-Music Avatars aims to be a community of like-minded creators/artists/enthusiasts bound by their genuine love for music. Our NFTs are designed to capture a moment where an artist/musician is one with their instrument. 
+Music Avatars aims to be a community of like-minded creators/artists/enthusiasts bound by their genuine love for music.  
   <br/>
   <br/>
   When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
+  <br/>
+  <br/>
+  We hope to give Independent Artists a sense of community, facilitate collaboration, and share financial rewards. 
 </s.TextDescription>
 
   
