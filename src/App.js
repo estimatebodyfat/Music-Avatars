@@ -676,7 +676,7 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
   When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
   <br/>
   <br/>
-  We hope to give Independent Artists a sense of community, facilitate collaboration, and share financial rewards. 
+  We hope to give Independent Artists a sense of community, facilitate collaboration and grow together. 
 </s.TextDescription>
 
   
@@ -743,7 +743,7 @@ You also get access to the items below once we hit each percentage of the Music 
                 fontSize: '18px',
               }}
           >
-          In addition to the above, 20% of the public mint and 50% of secondary sales will be allocated to the continuous development of the Music Avatars community.  
+          In addition to the above, 20% of the public mint will be allocated to the intial development of the Music Avatars community.  
 
           </s.TextDescription>
 
