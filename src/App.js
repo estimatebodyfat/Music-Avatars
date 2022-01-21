@@ -367,7 +367,7 @@ function App() {
             >
               Music Avatars is a community for Independent Artists and Musicians. <br/><br/>Our collection of 10,000 NFTs are designed to capture a moment where an artist/musician is one with their instrument. 
 
-              <br/><br/> We take the best of the PFP NFT world and apply it to web3 music.
+              <br/><br/>Let's take the best of PFP NFT world and apply it to web3 music.
 
 
             </s.TextTitle>
