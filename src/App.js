@@ -724,7 +724,7 @@ You also get access to the items below once we hit each percentage of the Music 
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 10% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span> Competitions for Musicians/Artists/Developers </li>
       
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100%+ </span> Songboard <span style={{fontStyle: 'italic'}}>(the world’s largest decentralized band) + Member Exclusive Merch store</span> </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100%+ </span> The Music Avatars Songboard </li>
           </ul>
 
           <br/>
@@ -805,7 +805,7 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
                 fontSize: '40px',
               }}
           >
-            What is the world’s largest decentralized band? </s.TextDescription>
+            What is the Music Avatars Songboard? </s.TextDescription>
 
           <s.TextDescription
               style={{
@@ -814,7 +814,10 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
                 fontSize: '18px',
               }}
           >
-A community with thousands of musicians and creators coming together to create music. <br/><br/>As a Music Avatars holder, you automatically get a spot in the band where using our Soundboard we’ll create songs and vote on decisions like the kind of music we want to make. Look forward to a lot of collaboration, learning and fun. We need your input on ways to make it awesome.
+
+We envision The Music Avatars Songboard as being a place where musicians, producers and artists can come together to work on music irrespective of where they live or who they know.<br/><br/>
+
+Our goal is to facilitate collaboration, learn from each other and have lots of fun. If this resonates with you, come help us build it! 
 
           </s.TextDescription>
 
