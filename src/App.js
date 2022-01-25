@@ -676,7 +676,7 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
   When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
   <br/>
   <br/>
-  We hope to give Independent Artists a sense of community, facilitate collaboration and grow together. 
+  Our goal is to give Music Makers all over the world a sense of community and facilitate collaboration. 
 </s.TextDescription>
 
   
@@ -815,9 +815,12 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
               }}
           >
 
-We envision The Music Avatars Songboard as being a place where musicians, producers and artists can come together to work on music irrespective of where they live or who they know.<br/><br/>
+We envision The Music Avatars Songboard as being a place where musicians, producers and artists can come together to work and release music together irrespective of where they live or who they know. <br/><br/>
 
-Our goal is to facilitate collaboration, learn from each other and have lots of fun. If this resonates with you, come help us build it! 
+We have no plans of competing with Music NFT platforms or protocols. Our only goal is to facilitate more collaboration with likeminded people and release great music in the world.<br/><br/>
+
+
+If this resonates with you, come help us build the Music Avatars Songboard. 
 
           </s.TextDescription>
 
