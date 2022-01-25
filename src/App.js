@@ -722,13 +722,9 @@ You also get access to the items below once we hit each percentage of the Music 
           <ul style={{ color: 'white', fontSize: '18px',  }}>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 00% </span> Access to a community of songwriters, producers, artists and developers </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 10% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 30% </span> Regular Competitions for Musicians/Artists/Developers </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span>
-              Songboard <span style={{fontStyle: 'italic'}}>(the world’s largest decentralized band) </span>
-               
-            </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 70% </span> Member Exclusive Merch store </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 90% </span> Yearly Event for Members </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span> Competitions for Musicians/Artists/Developers </li>
+      
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100%+ </span> Songboard <span style={{fontStyle: 'italic'}}>(the world’s largest decentralized band) + Member Exclusive Merch store</span> </li>
           </ul>
 
           <br/>
@@ -888,7 +884,7 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
           >
 Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-Each NFT will cost 0.05 ETH to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
+Each NFT will cost 0.07 ETH to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
 
 To get notified of the public mint and gain access to our discord, complete our application form by clicking on 'Request My Invitation' above. 
  </s.TextDescription>

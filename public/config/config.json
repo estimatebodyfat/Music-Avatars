@@ -10,7 +10,7 @@
   "SYMBOL": "MA",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 0,
-  "DISPLAY_COST": 0.05,
+  "DISPLAY_COST": 0.07,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/music-avatars",
