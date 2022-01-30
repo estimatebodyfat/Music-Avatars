@@ -721,8 +721,8 @@ You also get access to the items below once we hit each percentage of the Music 
 
           <ul style={{ color: 'white', fontSize: '18px',  }}>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 00% </span> Access to a community of songwriters, producers, artists and developers </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 10% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span> Competitions for Musicians/Artists/Developers </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
+            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100% </span> Competitions for Musicians/Artists/Developers </li>
       
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100%+ </span> The Music Avatars Songboard </li>
           </ul>
@@ -731,17 +731,6 @@ You also get access to the items below once we hit each percentage of the Music 
   <br/>
 
 
-  <s.TextDescription
-              style={{
-                textAlign: "left",
-                color: "var(--primary-text)",
-
-                fontSize: '18px',
-              }}
-          >
-          In addition to the above, 20% of the public mint will be allocated to the initial development of the Music Avatars community.  
-
-          </s.TextDescription>
 
 
 
@@ -890,7 +879,7 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
           >
 Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-Each NFT will cost 0.07 ETH to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
+Each NFT will be FREE to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
 
 To get notified of the public mint and gain access to our discord, complete our application form by clicking on 'Request My Invitation' above. 
  </s.TextDescription>
@@ -919,7 +908,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,000 will be available for the public mint. 1,000 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,500 will be available for the public mint. 500 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
