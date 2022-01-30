@@ -739,7 +739,7 @@ You also get access to the items below once we hit each percentage of the Music 
                 fontSize: '18px',
               }}
           >
-          In addition to the above, 20% of the public mint will be allocated to the intial development of the Music Avatars community.  
+          In addition to the above, 20% of the public mint will be allocated to the initial development of the Music Avatars community.  
 
           </s.TextDescription>
 
