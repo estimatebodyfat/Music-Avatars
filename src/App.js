@@ -268,9 +268,13 @@ function App() {
             <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
               <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.25rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '0.25rem', boxShadow: '2px 2px 0px rgba(255,255,255,0.9)' }}></i>
             </a>
-            {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
-            {/*  <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>*/}
-            {/*</a>*/}
+
+ 
+
+{/*             
+            <a target={'_blank'} href={'https://opensea.io/collection/music-avatars'} >
+             <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+            </a>  */}
           </div>
 
 
@@ -563,7 +567,9 @@ function App() {
 
                  style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
               >
-              <a href="#form">  REQUEST AN INVITATION </a>
+
+ 
+              <a target={'_blank'} href="https://discord.gg/3zhYDatwza">  JOIN OUR DISCORD </a>
               </StyledButton>
             </s.Container>
         ) : (
@@ -956,7 +962,7 @@ What started this project?  </s.TextDescription>
 
 
 
-
+{/* 
 <s.TextDescription
             style={{
               textAlign: "left",
@@ -970,7 +976,7 @@ What started this project?  </s.TextDescription>
 <a id="form">Application Form</a>  <br/></s.TextDescription>
 
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="100%" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="100%" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>   */}
 
         
 
