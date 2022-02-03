@@ -914,7 +914,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,500 will be available for the public mint. 500 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,900 will be available for the public mint. 100 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
