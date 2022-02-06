@@ -262,19 +262,32 @@ function App() {
             {/*<a target={'_blank'} href={''} style={{visibility: 'hidden'}}>*/}
             {/*  <i className="fab fa-discord" style={{color: 'white', fontSize: '3rem', marginLeft: '2rem'}}></i>*/}
             {/*</a>*/}
-            <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
+            {/* <a target={'_blank'} href={'https://twitter.com/musicavatars'}>
               <i className="fab fa-twitter" style={{color: 'white', backgroundColor: '#1D9BF0', fontSize: '1.25rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '0.5rem', boxShadow: '2px 2px 0px rgba(255,255,255,0.9)' }}></i>
-            </a>
+            </a> */}
+
+<a target={'_blank'} href={'https://opensea.io/collection/music-avatars'} >
+             <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+            </a> 
+
+            <a target={'_blank'} href={'https://etherscan.io/token/0x20D975eB2352f2c26b8869cC99Eac00cEF2f522B'} >
+             <img width={48} height={48} src={'/config/images/etherscan.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+            </a> 
+
+            <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'} >
+             <img width={48} height={48} src={'/config/images/instagram.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+            </a> 
+
+           
+{/* 
             <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
               <i className="fab fa-instagram" style={{color: 'white', backgroundColor: '#BA5287', fontSize: '1.25rem', margin: '.25em', padding: '.5rem', borderRadius: '1rem', marginLeft: '0.25rem', boxShadow: '2px 2px 0px rgba(255,255,255,0.9)' }}></i>
-            </a>
+            </a> */}
 
  
 
-{/*             
-            <a target={'_blank'} href={'https://opensea.io/collection/music-avatars'} >
-             <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '1rem', paddingTop:'10px', paddingLeft:'10px'}}/>
-            </a>  */}
+            
+           
           </div>
 
 
@@ -290,30 +303,30 @@ function App() {
             Music Avatars
           </s.TextTitleSpan>
 
-          {/*<div style={{float: 'right', }}>*/}
-          {/*  { blockchain.account === "" || blockchain.smartContract === null ? (*/}
-          {/*      <span>*/}
-          {/*        <StyledButton*/}
-          {/*            onClick={(e) => {*/}
-          {/*              e.preventDefault();*/}
-          {/*              dispatch(connect());*/}
-          {/*              getData();*/}
-          {/*            }}*/}
-          {/*            style={{  width: 250, padding: '13px 0'}}*/}
-          {/*        >*/}
-          {/*          CONNECT WALLET*/}
-          {/*        </StyledButton>*/}
-          {/*      </span>*/}
-          {/*  ) : (*/}
-          {/*      <span>*/}
-          {/*        <StyledButton*/}
-          {/*            style={{  width: 250, padding: '13px 0', backgroundColor: '#28A745' }}*/}
-          {/*        >*/}
-          {/*          CONNECTED*/}
-          {/*        </StyledButton>*/}
-          {/*      </span>*/}
-          {/*  )}*/}
-          {/*</div>*/}
+          <div style={{float: 'right', }}    >
+            { blockchain.account === "" || blockchain.smartContract === null ? (
+                <span>
+                  <StyledButton
+                      onClick={(e) => {
+                        e.preventDefault();
+                        dispatch(connect());
+                        getData();
+                      }}
+                      style={{  width: 250, padding: '13px 0'}}
+                  >
+                    CONNECT WALLET
+                  </StyledButton>
+                </span>
+            ) : (
+                <span>
+                  <StyledButton
+                      style={{  width: 250, padding: '13px 0', backgroundColor: '#28A745' }}
+                  >
+                    CONNECTED
+                  </StyledButton>
+                </span>
+            )}
+          </div>
         </div>
 
         {/* Title */}
@@ -371,34 +384,37 @@ function App() {
             >
               Music Avatars is a community for Independent Artists and Musicians. <br/><br/>Our collection of 10,000 NFTs are designed to capture a moment where an artist/musician is one with their instrument. 
 
-              <br/><br/>Let's take the best of PFP NFT world and apply it to web3 music.
+              <br/><br/>Let's take the best of PFP NFT world and apply it to web3 music. 
+
+             
+
+
+              
 
 
             </s.TextTitle>
 
-            {/*<s.TextTitle*/}
-            {/*  style={{*/}
-            {/*    textAlign: "center",*/}
-            {/*    fontSize: 50,*/}
-            {/*    fontWeight: "bold",*/}
-            {/*    color: "var(--accent-text)",*/}
-            {/*  }}*/}
-            {/*>*/}
-            {/*  {data.totalSupply} / {CONFIG.MAX_SUPPLY}*/}
-            {/*</s.TextTitle>*/}
-
-            {/*<s.TextDescription*/}
-            {/*  style={{*/}
-            {/*    textAlign: "center",*/}
-            {/*    color: "var(--primary-text)",*/}
-            {/*  }}*/}
-            {/*>*/}
-            {/*  <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>*/}
-            {/*    {truncate(CONFIG.CONTRACT_ADDRESS, 15)}*/}
-            {/*  </StyledLink>*/}
-            {/*</s.TextDescription>*/}
-
-            {/*<s.SpacerSmall />*/}
+            {/* <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 50,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+            </s.TextTitle>
+            <s.TextDescription
+              style={{
+                textAlign: "center",
+                color: "var(--primary-text)",
+              }}
+            >
+              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+              </StyledLink>
+            </s.TextDescription>
+            <s.SpacerSmall /> */}
 
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -505,11 +521,7 @@ function App() {
                 }}
             >
               🤘
-              <span style={{fontStyle: 'italic', padding: '0 15px'}}>
-                Let's create the
-                 <span><b> <u>Largest Decentralized Band</u> </b></span>
-                together
-              </span>
+            Avatars for Forward Thinking Musicians
               🤘
             </s.TextTitle>
           </s.Container>
@@ -550,7 +562,48 @@ function App() {
               alt={"example"}
               src={"/config/images/avatars/3.png"}
               style={{ transform: "scaleX(-1)", margin: 0, }}
-          />
+          /><br></br>
+
+
+          {/* Description container */}
+        <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
+          <s.Container
+            flex={2}
+            jc={"center"}
+            ai={"center"}
+            style={{
+              borderRadius: 10,
+              backgroundColor: 'rgba(0,0,0,0.7)',
+              padding: '1.5rem 1rem',
+            }}
+          >
+            <s.TextTitle
+                style={{
+                  textAlign: "center",
+                  fontSize: 28,
+                  fontWeight: 900,
+                  color: "var(--accent-text)",
+                }}
+            >
+
+              
+           Connect your Wallet to Mint 2 Music Avatars for FREE (gas excluded)
+            </s.TextTitle>
+          </s.Container>
+        </ResponsiveWrapper>
+<br></br>
+
+
+<StyledButton
+        
+        style={{width: '100%', padding: '1.5rem 0', maxWidth: '300px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#db3995', fontStyle: 'italic' }}
+     >
+
+
+     <a target={'_blank'} href="https://discord.gg/z3gwBB8w2Z">  JOIN OUR DISCORD</a><br></br>
+     </StyledButton>
+
+
         </s.Container>
 
         <s.SpacerMedium/>
@@ -558,20 +611,10 @@ function App() {
         {/* Show mint button if wallet connected */}
         { blockchain.account === "" || blockchain.smartContract === null ? (
             <s.Container ai={"center"} jc={"center"} fd={"row"} >
-              <StyledButton
-                //   onClick={(e) => {
-                //     e.preventDefault();
-                //     window.open('https://forms.gle/vyS9T97M5Qc4WcTS9', '_blank');
-                //   }}
-                
 
-                 style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
-              >
 
- 
-              <a target={'_blank'} href="https://discord.gg/3zhYDatwza">  JOIN OUR DISCORD </a>
-              </StyledButton>
-            </s.Container>
+          
+          </s.Container>
         ) : (
             <s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>
               <s.SpacerLarge />
@@ -611,18 +654,7 @@ function App() {
             </s.Container>
         )}
 
-        {/* Invite btn */}
-        {/*<s.Container ai={"center"} jc={"center"} fd={"row"} style={{marginBottom:'2rem'}}>*/}
-          {/* <StyledButton
-              onClick={(e) => {
-                e.preventDefault();
-                window.open('https://forms.gle/Hstaui9PhBZirG9o8', '_blank');
-              }}
-              style={{width: '100%', padding: '1.5rem 0', maxWidth: '400px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#3995db', fontStyle: 'italic' }}
-          >
-            ENTER YOUR INVITATION
-          </StyledButton> */}
-        {/*</s.Container>*/}
+        
 
         <s.SpacerMedium/>
         <s.SpacerSmall/>  {/* Use small in addition to standard medium because container shadow takes up unconsidered space */}
@@ -914,7 +946,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,900 will be available for the public mint. 100 NFTs will be reserved for the founding team/marketing initiatives.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 9,990 will be available for the public mint. 10 NFTs will be reserved for the founding team initiatives.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
@@ -962,7 +994,11 @@ What started this project?  </s.TextDescription>
 
 
 
-{/* 
+
+ 
+
+        
+
 <s.TextDescription
             style={{
               textAlign: "left",
@@ -973,26 +1009,9 @@ What started this project?  </s.TextDescription>
             }}
           >
 
-<a id="form">Application Form</a>  <br/></s.TextDescription>
+Note  </s.TextDescription>
 
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcujZib6IE5zClvb8crmP3iKQjycCjmXuOA7fGTQSpYKmkIg/viewform?embedded=true" width="100%" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>   */}
-
-        
-
-{/* <s.TextDescription
-            style={{
-              textAlign: "left",
-              color: "white",
-              fontWeight: '900',
-              fontStyle: 'italic',
-              fontSize: '40px',
-            }}
-          >
-
-Note  </s.TextDescription> */}
-
-{/* <s.TextDescription
+<s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
@@ -1005,7 +1024,7 @@ Note  </s.TextDescription> */}
             Once you make the purchase, you cannot undo this action. We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
-          </s.TextDescription> */}
+          </s.TextDescription>
 
 
           <s.SpacerSmall />
