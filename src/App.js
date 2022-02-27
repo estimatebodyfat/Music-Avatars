@@ -274,10 +274,7 @@ function App() {
              <img width={48} height={48} src={'/config/images/etherscan.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
             </a> 
 
-            <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'} >
-             <img width={48} height={48} src={'/config/images/instagram.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
-            </a> 
-
+        
            
 {/* 
             <a target={'_blank'} href={'https://www.instagram.com/musicavatars/'}>
@@ -293,11 +290,13 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '4.25em',
+                fontSize: '3.25em',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
                 justifyContent: 'center',
+                 
+                
               }}
           >
             Music Avatars
@@ -760,8 +759,7 @@ You also get access to the items below once we hit each percentage of the Music 
           <ul style={{ color: 'white', fontSize: '18px',  }}>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 00% </span> Access to a community of songwriters, producers, artists and developers </li>
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 50% </span> Dedicated Youtube Channel promoting Music Avatar Artists </li>
-            <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100% </span> Competitions for Musicians/Artists/Developers </li>
-      
+    
             <li style={{marginTop: '20px',}}><span style={{ fontSize: '23px', fontStyle: 'italic', marginRight: '1rem'}}> ⭐️ 100%+ </span> The Music Avatars Songboard </li>
           </ul>
 
@@ -946,7 +944,7 @@ How many Music Avatar are available for mint?</s.TextDescription>
               fontSize: '18px',
             }}
           >
- There are 10,000 NFTs in total of which 9,990 will be available for the public mint. 10 NFTs will be reserved for the founding team initiatives.  </s.TextDescription>
+ There are 10,000 NFTs in total of which 99% will be available for the public mint. 1% of NFTs will be reserved for the founder.  </s.TextDescription>
 
           <s.SpacerMedium/>
 
@@ -979,16 +977,11 @@ What started this project?  </s.TextDescription>
             <span>
               <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Kolourr (Bruce Rebello)
+                Kolourr (Bruce Rebello), an Indie Arist based out of Toronto, Canada
               </a>
             </span>
-            started this project with the help of
-            <span>
-              <a href={'https://twitter.com/donaldbough'} target={'_blank'} style={{color: 'white', marginRight: '5px', marginLeft: '5px'}}>
-                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Donald Bough
-              </a><br/><br/>
-            </span>
+            started this project.  
+        
              </s.TextDescription>
 
 
