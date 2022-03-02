@@ -977,10 +977,18 @@ What started this project?  </s.TextDescription>
             <span>
               <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Kolourr (Bruce Rebello), an Indie Arist based out of Toronto, Canada
-              </a>
+                Kolourr (Bruce Rebello)</a>, an Indie Arist and Engineer based out of Toronto, Canada found Music Avatars. He designed the NFTs, edited the solidity contract and continues maintaining this site.<br></br><br></br>
+                
+                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
+                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
+                Donald Bough</a> helped with the design of this website. 
+
+                None of this would be possible without <a href={'https://twitter.com/Hashlipsnft'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
+                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
+                Daniel "Hashlips"</a> amazing NFT tutorials. 
+              
             </span>
-            started this project.  
+            
         
              </s.TextDescription>
 
