@@ -798,20 +798,10 @@ Music Avatars provide a unique visual and musical identity that helps you stand 
 
           </s.TextDescription>
 
-          {/* Avatar mics */}
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-                id={"avatarMicsImg"}
-                width={300}
-                height={300}
-                alt={"example"}
-                src={"/config/images/avatars/229.png"}
-                style={{ transform: "scaleX(-1)"}}
-            />
-          </s.Container>
+       
 
 
-          <s.TextDescription
+          {/* <s.TextDescription
               style={{
                 textAlign: "left",
                 color: "white",
@@ -837,7 +827,7 @@ We have no plans of competing with Music NFT platforms or protocols. Our only go
 
 If this resonates with you, come help us build the Music Avatars Songboard. 
 
-          </s.TextDescription>
+          </s.TextDescription> */}
 
 
    {/* Avatar drums */}
@@ -913,14 +903,31 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
               fontSize: '18px',
             }}
           >
+Music Avatars are FREE to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
+
 Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-Each NFT will be FREE to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
 
 To get notified of the public mint and gain access to our discord, complete our application form by clicking on 'Request My Invitation' above. 
  </s.TextDescription>
 
           <s.SpacerMedium/>
+
+
+
+             {/* Avatar mics */}
+             <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg
+                id={"avatarMicsImg"}
+                width={300}
+                height={300}
+                alt={"example"}
+                src={"/config/images/avatars/229.png"}
+                style={{ transform: "scaleX(-1)"}}
+            />
+          </s.Container>
+
+
 
 <s.TextDescription
             style={{
