@@ -593,14 +593,14 @@ function App() {
 <br></br>
 
 
-<StyledButton
+{/* <StyledButton
         
         style={{width: '100%', padding: '1.5rem 0', maxWidth: '300px', borderRadius: '1rem', fontSize: 25, backgroundColor: '#db3995', fontStyle: 'italic' }}
      >
 
 
      <a target={'_blank'} href="https://discord.gg/z3gwBB8w2Z">  JOIN OUR DISCORD</a><br></br>
-     </StyledButton>
+     </StyledButton> */}
 
 
         </s.Container>
@@ -719,19 +719,9 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
   
 
 
-          {/* Avatar guitars */}
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-                id={"avatarGuitarsImg"}
-                width={300}
-                height={300}
-                alt={"example"}
-                src={"/config/images/avatars/166.png"}
-                style={{ transform: "scaleX(-1)"}}
-            />
-          </s.Container>
+        
 
-          <s.TextDescription
+          {/* <s.TextDescription
               style={{
                 textAlign: "left",
                 color: "white",
@@ -764,7 +754,7 @@ You also get access to the items below once we hit each percentage of the Music 
           </ul>
 
           <br/>
-  <br/>
+  <br/> */}
 
 
 
@@ -890,7 +880,17 @@ If this resonates with you, come help us build the Music Avatars Songboard.
 Music Avatars are primarily geared towards artists/musicians/creatives but open to music enthusiasts worldwide.<br/><br/></s.TextDescription>
 
        
-         
+           {/* Avatar guitars */}
+           <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg
+                id={"avatarGuitarsImg"}
+                width={300}
+                height={300}
+                alt={"example"}
+                src={"/config/images/avatars/166.png"}
+                style={{ transform: "scaleX(-1)"}}
+            />
+          </s.Container>
 
 <s.TextDescription
             style={{
