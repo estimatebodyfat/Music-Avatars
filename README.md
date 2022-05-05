@@ -1,7 +1,7 @@
-<h1 align="center">Music Avatars 10,000 NFT Collection DAAP<a href="https://www.musicavatars.org/">Music Avatars</a></h1>
+<h1 align="center">Music Avatars 10,000 NFT Collection DAAP: <a href="https://www.musicavatars.org/">Music Avatars</a></h1>
 <div align="center">
   <a href='https://www.musicavatars.org/'>
-	  <img src="https://raw.githubusercontent.com/kolourr/music-avatars/images/musicavatars.png" width="100%" />
+	  <img src="https://raw.githubusercontent.com/kolourr/Music-Avatars/main/images/musicavatars.png" width="100%" />
   </a>
 </div>
 
