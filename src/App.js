@@ -267,11 +267,11 @@ function App() {
             </a> */}
 
 <a target={'_blank'} href={'https://opensea.io/collection/music-avatars'} >
-             <img width={48} height={48} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+             <img width={44} height={44} src={'/config/images/open-sea.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
             </a> 
 
             <a target={'_blank'} href={'https://etherscan.io/token/0x20D975eB2352f2c26b8869cC99Eac00cEF2f522B'} >
-             <img width={48} height={48} src={'/config/images/etherscan.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
+             <img width={44} height={44} src={'/config/images/etherscan.png'} alt={'Open Sea logo'} style={{marginLeft: '0.15rem', paddingTop:'10px', paddingLeft:'10px'}}/>
             </a> 
 
         
@@ -290,42 +290,18 @@ function App() {
 
           <s.TextTitleSpan
               style={{
-                fontSize: '3.25em',
+                fontSize: '2.5rem',
                 fontWeight: "900",
                 textShadow: `3px 3px 0px rgba(255,149,212,0.9)`,
                 fontStyle: 'italic',
                 justifyContent: 'center',
-                 
+            
                 
               }}
           >
             Music Avatars
           </s.TextTitleSpan>
 
-          <div style={{float: 'right', }}    >
-            { blockchain.account === "" || blockchain.smartContract === null ? (
-                <span>
-                  <StyledButton
-                      onClick={(e) => {
-                        e.preventDefault();
-                        dispatch(connect());
-                        getData();
-                      }}
-                      style={{  width: 250, padding: '13px 0'}}
-                  >
-                    CONNECT WALLET
-                  </StyledButton>
-                </span>
-            ) : (
-                <span>
-                  <StyledButton
-                      style={{  width: 250, padding: '13px 0', backgroundColor: '#28A745' }}
-                  >
-                    CONNECTED
-                  </StyledButton>
-                </span>
-            )}
-          </div>
         </div>
 
         {/* Title */}
@@ -591,6 +567,71 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
 <br></br>
+
+
+          {/* Description container */}
+          <ResponsiveWrapper flex={1} test style={{maxWidth: '1000px',}}>
+          <s.Container
+            flex={2}
+            jc={"center"}
+            ai={"center"}
+            style={{
+              borderRadius: 10,
+              // backgroundColor: 'rgba(0,0,0,0.7)',
+              padding: '1.5rem 1rem',
+            }}
+          >
+            <s.TextTitle
+                style={{
+                  textAlign: "center",
+                  fontSize: 28,
+                  fontWeight: 900,
+                  color: "var(--accent-text)",
+                }}
+            >
+
+       
+       
+<div style={{float: 'right', }}    >
+            { blockchain.account === "" || blockchain.smartContract === null ? (
+                <span>
+                  <StyledButton
+                      onClick={(e) => {
+                        e.preventDefault();
+                        dispatch(connect());
+                        getData();
+                      }}
+                      style={{  width: 300, fontSize: '1.5rem', padding: '18px 0'}}
+                  >
+                    CONNECT WALLET
+                  </StyledButton>
+                </span>
+            ) : (
+                <span>
+                  <StyledButton
+                      style={{  width: 300, fontSize: '1.5rem', padding: '18px 0', backgroundColor: '#28A745' }}
+                  >
+                    CONNECTED
+                  </StyledButton>
+                </span>
+            )}
+          </div>
+
+
+
+
+
+            </s.TextTitle>
+          </s.Container>
+        </ResponsiveWrapper>
+<br></br>
+
+
+
+
+
+
+
 
 
 {/* <StyledButton
