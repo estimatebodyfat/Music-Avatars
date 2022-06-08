@@ -982,17 +982,15 @@ What started this project?  </s.TextDescription>
             }}
           >
             <span>
-              <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
-                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Kolourr (Bruce Rebello)</a>, an Indie Arist and Engineer based out of Toronto, Canada found Music Avatars. He designed the NFTs, edited the solidity contract and continues maintaining this site.<br></br><br></br>
-                
-                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
-                <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Donald Bough</a> helped with the design of this website. 
+             
 
+            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>Bruce Rebello <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a> with the help of 
+                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>Donald Bough</a>.<br></br>
+      
+                  
                 None of this would be possible without <a href={'https://twitter.com/Hashlipsnft'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Daniel "Hashlips"</a> amazing NFT tutorials. 
+                Daniel "Hashlips"</a> amazing NFT and solidity tutorials. 
               
             </span>
             
@@ -1029,7 +1027,7 @@ Note  </s.TextDescription>
           >
             Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action. We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            Once you make the purchase, you cannot undo this action. We have set the gas limit to 185000 for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
