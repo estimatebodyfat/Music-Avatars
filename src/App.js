@@ -357,9 +357,9 @@ function App() {
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars is a community for Independent Artists and Musicians. <br/><br/>Our collection of 10,000 NFTs are designed to capture a moment where an artist/musician is one with their instrument. 
+              Music Avatars is a free-to-mint PFP NFT Collection for Artists and Musicians. <br/><br/>This collection of NFTs capture the moment where an artist/musician is one with their instrument. 
 
-              <br/><br/>Let's take the best of PFP NFT world and apply it to web3 music. 
+              <br/><br/>
 
              
 
@@ -496,7 +496,7 @@ function App() {
                 }}
             >
               🤘
-            Avatars for Forward Thinking Musicians
+            Avatars for Forward Thinking Artists & Musicians
               🤘
             </s.TextTitle>
           </s.Container>
@@ -1025,8 +1025,8 @@ What started this project?  </s.TextDescription>
             <span>
              
 
-            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>Bruce Rebello <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a> with the help of 
-                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>Donald Bough</a>.<br></br>
+            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a>with the help of  
+                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}> Donald Bough.</a><br></br>
       
                   
                 None of this would be possible without <a href={'https://twitter.com/Hashlipsnft'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
@@ -1068,7 +1068,7 @@ Note  </s.TextDescription>
           >
             Please make sure you are connected to the right network (
             {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action. We have set the gas limit to 185000 for the contract to
+            Once you make the purchase, you cannot undo this action. We have set the gas limit to 225000 for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
