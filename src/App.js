@@ -751,10 +751,9 @@ Music Avatars aims to be a community of like-minded creators/artists/enthusiasts
   <br/>
   <br/>
 
-  When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists/musicians/creatives who have become 1 with their NFT and hold it forever.
+  When you hold a Music Avatar NFT, you own all commercial and publishing rights associated with the image. We envision a future where strong brands are built upon Music Avatar NFTs by forward thinking artists and musicians.
   <br/>
   <br/>
-  Our goal is to give Music Makers all over the world a sense of community and facilitate collaboration. 
 </s.TextDescription>
 
   
@@ -831,11 +830,11 @@ You also get access to the items below once we hit each percentage of the Music 
                 fontSize: '18px',
               }}
           >
-Music Avatars provide a unique visual and musical identity that helps you stand out as an individual as well as be part of a community. 
+Music Avatars provide a unique visual and musical identity that helps you stand out as an individual as well as be part of a community of like-minded folk. 
    <br/>
   <br/>
 
-  As a Music Avatar NFT hodler, you can license it for use as the face of your brand, your online identity (profile picture), Soundcloud Profile Pictures, Album Covers and even use it for advertisements and stickers at your shows and keep all the earnings for yourself.
+  As a Music Avatar NFT hodler, you can use your NFT as the face of your brand, online identity (profile picture), on album covers, stickers, etc. What you choose to do with it is left upto you. Any income you generate by licensing your NFT is also yours to keep.
 
           </s.TextDescription>
 
@@ -944,12 +943,12 @@ How much does it cost to mint a Music Avatar?  </s.TextDescription>
               fontSize: '18px',
             }}
           >
-Music Avatars are FREE to mint. You will have the opportunity of minting 2 NFTs on this website. <br/>   <br/>
+Music Avatars are FREE to mint. You have the opportunity of minting 2 NFTs on this website. Music Avatars live on the Ethereum blockchain. <br/>   <br/>
 
-Music Avatars live on the Ethereum blockchain. <br/>   <br/>
+If the free public mint is sold out, you can purchase an NFT through the secondary market on <a href={'https://opensea.io/collection/music-avatars'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Opensea.</a>
 
+<br/>   <br/>
 
-To get notified of the public mint and gain access to our discord, complete our application form by clicking on 'Request My Invitation' above. 
  </s.TextDescription>
 
           <s.SpacerMedium/>
