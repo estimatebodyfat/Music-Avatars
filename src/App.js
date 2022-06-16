@@ -357,7 +357,7 @@ function App() {
                   color: "var(--accent-text)",
                 }}
             >
-              Music Avatars is a free-to-mint PFP NFT Collection for Artists and Music Enthusiasts. <br/><br/>This collection of NFTs capture the moment where an artist/musician is one with their instrument. 
+              Music Avatars is a free-to-mint PFP collection of 10,000 NFTs for Artists and Music Enthusiasts. <br/><br/>This collection of NFTs capture the moment where an artist/musician is one with their instrument. 
 
               <br/><br/>
 
