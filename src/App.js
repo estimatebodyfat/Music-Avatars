@@ -1024,13 +1024,20 @@ What started this project?  </s.TextDescription>
             <span>
              
 
-            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a>with the help of  
-                <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}> Donald Bough.</a><br></br>
-      
+            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a>, an artist and engineer, as an experiment to interlink the PFP NFT world with musical artists. <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/> Donald Bough</a>helped with building this website.  <br></br> <br></br>
+                     
                   
                 None of this would be possible without <a href={'https://twitter.com/Hashlipsnft'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
-                Daniel "Hashlips"</a> amazing NFT and solidity tutorials. 
+                Daniel "Hashlips"</a> amazing NFT and solidity tutorials.    
+      
+
+                
+
+ 
+
+
+            
               
             </span>
             
