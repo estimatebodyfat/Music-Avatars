@@ -359,7 +359,9 @@ function App() {
             >
               Music Avatars is a free-to-mint PFP collection of 10,000 NFTs for Artists and Music Enthusiasts. <br/><br/>This collection of NFTs capture the moment where an artist/musician is one with their instrument. 
 
-              <br/><br/>
+        
+
+               
 
              
 
@@ -562,7 +564,7 @@ function App() {
             >
 
               
-           Connect your Wallet to Mint 2 Music Avatars for FREE (gas excluded)
+           Connect your Wallet to Mint 2 Music Avatars for FREE <br></br>(as supplies last - gas excluded)
             </s.TextTitle>
           </s.Container>
         </ResponsiveWrapper>
@@ -1024,8 +1026,9 @@ What started this project?  </s.TextDescription>
             <span>
              
 
-            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a>, an artist and engineer, as an experiment to interlink the PFP NFT world with musical artists. <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/> Donald Bough</a>helped with building this website.  <br></br> <br></br>
-                     
+            Music Avatars was founded by <a href={'https://twitter.com/kolourrmusic'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>Bruce Rebello (aka Kolourr)</a>, artist and engineer, as an experiment to interlink the PFP NFT world with musicians and artists.  <br></br> <br></br>  
+            
+            <a href={'https://twitter.com/DonaldBough'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}><i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/> Donald Bough</a>helped with building this website.     
                   
                 None of this would be possible without <a href={'https://twitter.com/Hashlipsnft'} target={'_blank'} style={{color: 'white', marginRight: '5px'}}>
                 <i className="fas fa-external-link-square-alt" style={{marginRight: '5px'}}/>
